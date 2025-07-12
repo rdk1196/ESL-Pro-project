@@ -1,0 +1,101 @@
+@use "/src/sass/base/variables.scss" as *;
+
+
+.promo {
+    padding-top: 13px;
+    min-height: 100vh;
+    background: url("../../img/promo.png") center center / cover no-repeat;
+
+    &__social {
+        display: flex;
+        gap: 405px;
+
+        &-block {
+            display: flex;
+            align-items: center;
+            column-gap: 30px;
+
+        }
+
+        &-icon {
+            display: block;
+            color: $light;
+            font-size: 24px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 106px;
+            background-color: rgba(62, 43, 10, 1);
+            height: 1px;
+            width: 740px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        margin-top: 163px;
+        width: 703px;
+
+        &-icon {
+            width: 191px;
+            height: 60px;
+        }
+
+        &-text {
+            font-weight: 400;
+            font-size: 18px;
+            letter-spacing: 0.01em;
+            color: $light-gray;
+        }
+    }
+
+    &__buttons {
+        margin-top: 210px;
+        display: flex;
+        gap: 35px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .promo {
+        padding-top: 30px;
+
+        &__social {
+            &-block {
+                column-gap: 20px;
+            }
+
+            &-icon {
+                font-size: 15px;
+            }
+
+            &::after {
+                width: 617px;
+                top: 90px;
+            }
+        }
+
+        &__star {
+            width: 60px;
+        }
+
+        &__info {
+
+            width: 440px;
+
+            &-icon {
+                width: 127px;
+                height: 44px;
+            }
+
+            &-text {
+                font-size: 16px;
+            }
+
+        }
+    }
+}

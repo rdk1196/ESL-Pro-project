@@ -1,0 +1,80 @@
+.promo {
+    background-color: #020106;
+    // height: 1000px;
+    min-height: 400px;
+
+
+    .promo-swiper {
+        // width: 100%;
+        // height: 100%;
+
+        // .swiper-wrapper {
+        //     width: 100%;
+        //     height: 100%;
+        // }
+
+        .swiper-slide {
+            width: 100%;
+            // height: 100%;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+
+            img {
+                width: 100%;
+                // height: 100%;
+                object-fit: contain;
+                transition: object-fit 0.3s ease;
+            }
+        }
+
+        .swiper-pagination {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+
+            .swiper-pagination-bullet {
+                background-color: #fff;
+                opacity: 0.6;
+
+                &-active {
+                    background-color: #ffcc00;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    // ✅ Адаптация на брейкпоинтах
+    @media (max-width: 1400px) {
+        height: auto;
+        aspect-ratio: 16/9;
+
+        .promo-swiper {
+            height: auto;
+
+            .swiper-slide img {
+                object-fit: contain;
+                padding: 0 20px;
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+        aspect-ratio: 16/10;
+
+        .promo-swiper .swiper-slide img {
+            padding: 0 10px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        aspect-ratio: 4/3;
+
+        .promo-swiper .swiper-slide img {
+            padding: 0;
+        }
+    }
+}

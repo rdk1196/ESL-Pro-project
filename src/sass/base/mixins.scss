@@ -1,0 +1,6 @@
+@use "/src/sass/base/variables.scss" as *;
+
+@mixin title {
+    font-weight: 700;
+    color: $light;
+}

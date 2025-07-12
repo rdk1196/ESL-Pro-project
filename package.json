@@ -1,0 +1,18 @@
+{
+  "name": "esl",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Roman",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "postcss-pxtorem": "^6.1.0",
+    "sass-embedded": "^1.89.2",
+    "swiper": "^11.2.10",
+    "vite": "^6.3.5"
+  }
+}
