@@ -1,10 +1,10 @@
 @use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
 
 .btn {
+    display: inline-block;
     border: 2px solid $dark-yellow;
     padding: 15px 20px;
-    width: 246px;
-    height: 50px;
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 0.01em;
@@ -18,10 +18,10 @@
     }
 }
 
-@media screen and (max-width: 1600px) {
+@include respond(sm) {
     .btn {
-        width: 200px;
-        padding: 5px 10px;
-        font-size: 12px;
+        font-size: 14px;
+        padding: 10px 16px;
+        border-radius: 6px;
     }
 }

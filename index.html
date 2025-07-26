@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <section class="promo">
+    <header class="promo">
 
         <div class="container">
             <div class="promo__social">
@@ -21,25 +21,25 @@
 
                 <ul class="promo__social-block">
                     <li>
-                        <a href="https://x.com">
+                        <a href="https://x.com" aria-label="Twitter">
                             <span class="promo__social-icon icon-twitter"></span>
                         </a>
                     </li>
 
                     <li>
-                        <a href="https://www.twitch.tv">
+                        <a href="https://www.twitch.tv" aria-label="Twitch">
                             <span class="promo__social-icon icon-twitch"></span>
                         </a>
                     </li>
 
                     <li>
-                        <a href="https://www.facebook.com">
+                        <a href="https://www.facebook.com" aria-label="Facebook">
                             <span class="promo__social-icon icon-facebook"></span>
                         </a>
                     </li>
 
                     <li>
-                        <a href="https://m.vk.com">
+                        <a href="https://m.vk.com" aria-label="Vkontakte">
                             <span class="promo__social-icon icon-vkontakte"></span>
                         </a>
                     </li>
@@ -54,7 +54,8 @@
                 <h1 class="promo__info-title title-h1">ESL Pro League CSGO</h1>
 
                 <p class="promo__info-text">
-                    League CS:GO is the new online league in Counter-Strike: Global Offensive, with $100,000 total prize
+                    League CS:GO is the new online league in Counter-Strike: Global Offensive, with $100,000 total
+                    prize
                     pool. 16 teams from
                     Europe and the CIS will take part in the League, with 4 teams going to League through open
                     qualifiers.
@@ -63,10 +64,219 @@
             </div>
 
             <div class="promo__buttons">
-                <button class="promo__btn btn">read announcment</button>
 
+                <button class="promo__btn btn">read announcment</button>
                 <button class="promo__btn btn">get tickets</button>
+
             </div>
+
+        </div>
+
+    </header>
+
+    <section class="schedule">
+
+        <div class="container">
+            <h2 class="schedule__title title-h2">Schedule and results</h2>
+
+            <div class="schedule__buttons">
+                <button class="schedule__btn btn">matches</button>
+                <button class="schedule__btn btn">battles</button>
+            </div>
+
+            <div class="schedule__wrapper">
+                <div class="swiper schedule__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="schedule__card">
+                                <div class="schedule__card-block">
+
+                                    <p class="schedule__card-block-header">Group Stage</p>
+
+                                    <div class="schedule__card-block-info">
+
+                                        <img src="/src/icons/group.png" alt="group"
+                                            class="schedule__card-block-info-icon">
+
+                                        <div class="schedule__card-block-info-details">
+
+                                            <div class="schedule__card-block-info-details-groups">
+                                                <p class="schedule__group">Group A</p>
+                                                <p class="schedule__group">Group B</p>
+                                            </div>
+
+                                            <div class="schedule__card-block-info-details-match">
+                                                match #1
+                                            </div>
+
+                                        </div>
+
+                                        <p class="schedule__card-block-info-map">Map: Erangel</p>
+
+                                    </div>
+                                </div>
+                                <a href="#" class="schedule__watch-live-btn">
+                                    <span class="schedule__watch-live-btn-icon"></span> WATCH LIVE
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="schedule__card">
+                                <div class="schedule__card-block">
+
+                                    <p class="schedule__card-block-header">Group Stage</p>
+
+                                    <div class="schedule__card-block-info">
+
+                                        <img src="/src/icons/group.png" alt="group"
+                                            class="schedule__card-block-info-icon">
+
+                                        <div class="schedule__card-block-info-details">
+
+                                            <div class="schedule__card-block-info-details-groups">
+                                                <p class="schedule__group">Group A</p>
+                                                <p class="schedule__group">Group B</p>
+                                            </div>
+
+                                            <div class="schedule__card-block-info-details-match">
+                                                match #1
+                                            </div>
+
+                                        </div>
+
+                                        <p class="schedule__card-block-info-map">Map: Erangel</p>
+
+                                    </div>
+
+                                </div>
+
+                                <a href="#" class="schedule__watch-live-btn">
+                                    <span class="schedule__watch-live-btn-icon"></span> WATCH LIVE
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="schedule__card">
+                                <div class="schedule__card-block">
+
+                                    <p class="schedule__card-block-header">Group Stage</p>
+
+                                    <div class="schedule__card-block-info">
+
+                                        <img src="/src/icons/group.png" alt="group"
+                                            class="schedule__card-block-info-icon">
+
+                                        <div class="schedule__card-block-info-details">
+
+                                            <div class="schedule__card-block-info-details-groups">
+                                                <p class="schedule__group">Group A</p>
+                                                <p class="schedule__group">Group B</p>
+                                            </div>
+
+                                            <div class="schedule__card-block-info-details-match">
+                                                match #1
+                                            </div>
+
+                                        </div>
+
+                                        <p class="schedule__card-block-info-map">Map: Erangel</p>
+
+                                    </div>
+
+                                </div>
+                                <a href="#" class="schedule__watch-live-btn">
+                                    <span class="schedule__watch-live-btn-icon"></span> WATCH LIVE
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="schedule__card">
+                                <div class="schedule__card-block">
+
+                                    <p class="schedule__card-block-header">Group Stage</p>
+
+                                    <div class="schedule__card-block-info">
+
+                                        <img src="/src/icons/group.png" alt="group"
+                                            class="schedule__card-block-info-icon">
+
+                                        <div class="schedule__card-block-info-details">
+
+                                            <div class="schedule__card-block-info-details-groups">
+                                                <p class="schedule__group">Group A</p>
+                                                <p class="schedule__group">Group B</p>
+                                            </div>
+
+                                            <div class="schedule__card-block-info-details-match">
+                                                match #1
+                                            </div>
+
+                                        </div>
+
+                                        <p class="schedule__card-block-info-map">Map: Erangel</p>
+
+                                    </div>
+
+                                </div>
+                                <a href="#" class="schedule__watch-live-btn">
+                                    <span class="schedule__watch-live-btn-icon"></span> WATCH LIVE
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="schedule__card">
+                                <div class="schedule__card-block">
+
+                                    <p class="schedule__card-block-header">Group Stage</p>
+
+                                    <div class="schedule__card-block-info">
+
+                                        <img src="/src/icons/group.png" alt="group"
+                                            class="schedule__card-block-info-icon">
+
+                                        <div class="schedule__card-block-info-details">
+
+                                            <div class="schedule__card-block-info-details-groups">
+                                                <p class="schedule__group">Group A</p>
+                                                <p class="schedule__group">Group B</p>
+                                            </div>
+
+                                            <div class="schedule__card-block-info-details-match">
+                                                match #1
+                                            </div>
+
+                                        </div>
+
+                                        <p class="schedule__card-block-info-map">Map: Erangel</p>
+
+                                    </div>
+
+                                </div>
+                                <a href="#" class="schedule__watch-live-btn">
+                                    <span class="schedule__watch-live-btn-icon"></span> WATCH LIVE
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule__wrapper-nav">
+
+
+                    <div class="schedule__wrapper-nav-circle schedule__prev">
+                        <div class="swiper-button-prev"></div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                    <div class="schedule__wrapper-nav-circle schedule__next">
+                        <div class="swiper-button-next"></div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
 
         </div>
 

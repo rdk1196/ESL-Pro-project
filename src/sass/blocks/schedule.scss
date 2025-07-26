@@ -1,0 +1,249 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.schedule {
+    padding: 140px 0 275px;
+    background-color: $black-background;
+
+    &__buttons {
+        position: relative;
+        margin-top: 40px;
+        display: flex;
+        gap: 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: $dark-yellow;
+            height: 2px;
+            width: 100%;
+        }
+    }
+
+    &__btn {
+        text-transform: capitalize;
+    }
+
+    &__swiper {
+        position: relative;
+        margin-top: 101px;
+    }
+
+
+    &__card {
+        position: relative;
+        border-radius: 10px;
+        width: 350px;
+        height: 341px;
+        background-color: $black-gray;
+        transition: box-shadow 0.3s ease;
+
+        &-block {
+            position: relative;
+            width: 279px;
+            height: 246px;
+            margin: 47px 35px;
+            transition: filter 0.3s ease; // Добавляем transition для плавного затемнения/осветления
+            filter: brightness(1); // По умолчанию все блоки контента яркие
+
+            &-header {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 143%;
+                letter-spacing: 0.01em;
+                text-align: left;
+                color: $light;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 33px;
+                    left: 0;
+                    background-color: $dark-yellow;
+                    height: 2px;
+                    width: 100%;
+                }
+            }
+
+            &-info {
+                margin-top: 22px;
+
+                &-icon {
+                    margin-top: 32px;
+                    width: 50px;
+                    height: 50px;
+                }
+
+                &-details {
+                    margin-top: 22px;
+                    display: flex;
+                    justify-content: space-between;
+                    color: $light;
+                    font-weight: 700;
+
+                    &-groups {
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 20px;
+                        line-height: 175%;
+                    }
+
+                    &-match {
+                        margin: 20px 8px 20px 0;
+                        border: 1px solid $dark-yellow;
+                        padding: 5px 10px;
+                        width: 98px;
+                        height: 30px;
+                        font-size: 14px;
+                        line-height: 143%;
+                        letter-spacing: 0.02em;
+                        text-transform: uppercase;
+                        word-break: break-word;
+                    }
+                }
+
+                &-map {
+                    margin-top: 10px;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 167%;
+                    letter-spacing: 0.01em;
+                    text-align: left;
+                    color: $silver;
+                }
+            }
+
+
+        }
+    }
+
+    &__watch-live-btn {
+        position: absolute;
+        top: 44%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        padding: 10px 20px;
+        border-radius: 5px;
+        width: 166px;
+        height: 40px;
+        background: $dark-yellow;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 0.01em;
+        color: $light;
+
+        visibility: hidden;
+        opacity: 0;
+        z-index: 10;
+
+
+        &-icon {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url("/src/icons/play.png") center / contain no-repeat;
+        }
+    }
+
+    .swiper {
+        padding: 15px;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-active {
+            .schedule__card {
+                box-shadow: 0 0 15px rgba(255, 204, 0, 0.7),
+                    0 0 30px rgba(255, 204, 0, 0.3);
+
+            }
+
+            .schedule__card-block {
+                filter: brightness(0.4);
+
+            }
+
+            .schedule__watch-live-btn {
+                opacity: 1;
+                visibility: visible;
+                z-index: 100;
+
+            }
+        }
+    }
+
+    &__wrapper-nav {
+
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        width: 439px;
+        margin: 46px auto 0 auto;
+
+        .swiper-pagination {
+            bottom: 23px;
+        }
+
+        .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+        .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+            margin-right: 18px;
+            width: 15px;
+            height: 15px;
+        }
+
+        .swiper-pagination-bullet {
+            background-color: $black-gray;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: $dark-yellow;
+        }
+
+        &-circle {
+            width: 85px;
+            height: 85px;
+            border: 2px solid $dark-yellow;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+
+            .swiper-button-prev {
+                position: static;
+                background: url("/src/icons/prev.svg") center / contain no-repeat;
+                width: 45px;
+                height: 16px;
+
+                &::after {
+                    content: "";
+                }
+            }
+
+            .swiper-button-next {
+                position: static;
+                background: url("/src/icons/next.svg") center / contain no-repeat;
+                width: 45px;
+                height: 16px;
+
+                &::after {
+                    content: "";
+                }
+            }
+        }
+
+
+    }
+
+}

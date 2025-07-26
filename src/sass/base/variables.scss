@@ -1,5 +1,15 @@
 $dark-yellow: #f3a917;
-$black-background: #0F0F17;
+$black-background: #020106;
 $light: #FFFFFF;
 $light-gray: #605F61;
 $dark: #000;
+$silver: #c4c4c5;
+$black-gray: #292A2F;
+
+$breakpoints: (
+    "xl": 1600px,
+    "lg": 1400px,
+    "md": 1024px,
+    "sm": 768px,
+    "xs": 480px
+);

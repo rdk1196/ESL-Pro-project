@@ -1,6 +1,22 @@
 @use "/src/sass/base/variables.scss" as *;
+@use "sass:map";
 
 @mixin title {
     font-weight: 700;
     color: $light;
+    word-break: break-word;
+}
+
+@mixin respond($key) {
+    $value: map.get($breakpoints, $key);
+
+    @if $value {
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    }
+
+    @else {
+        @warn "⚠️ Breakpoint #{$key} not found in $breakpoints";
+    }
 }

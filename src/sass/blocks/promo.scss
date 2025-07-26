@@ -1,14 +1,21 @@
 @use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
 
 
 .promo {
-    padding-top: 13px;
-    min-height: 100vh;
+
+    padding: 13px 0 197px 0;
+    border-bottom: none;
+
     background: url("../../img/promo.png") center center / cover no-repeat;
 
+
     &__social {
+        position: relative;
         display: flex;
-        gap: 405px;
+        max-width: 740px;
+        width: 100%;
+        justify-content: space-between;
 
         &-block {
             display: flex;
@@ -29,7 +36,8 @@
             top: 106px;
             background-color: rgba(62, 43, 10, 1);
             height: 1px;
-            width: 740px;
+            max-width: 740px;
+            width: 100%;
         }
     }
 
@@ -38,7 +46,8 @@
         flex-direction: column;
         gap: 35px;
         margin-top: 163px;
-        width: 703px;
+        max-width: 703px;
+        width: 100%;
 
         &-icon {
             width: 191px;
@@ -47,9 +56,10 @@
 
         &-text {
             font-weight: 400;
-            font-size: 18px;
+            font-size: clamp(16px, 1.2vw, 18px);
             letter-spacing: 0.01em;
             color: $light-gray;
+            word-break: break-word;
         }
     }
 
@@ -58,11 +68,17 @@
         display: flex;
         gap: 35px;
     }
+
+    &__btn {
+        width: 246px;
+        height: 50px;
+
+    }
 }
 
-@media screen and (max-width: 1600px) {
+@include respond(xl) {
     .promo {
-        padding-top: 30px;
+        padding-top: 80px;
 
         &__social {
             &-block {
@@ -70,7 +86,7 @@
             }
 
             &-icon {
-                font-size: 15px;
+                font-size: 18px
             }
 
             &::after {
@@ -84,8 +100,7 @@
         }
 
         &__info {
-
-            width: 440px;
+            margin-top: 130px;
 
             &-icon {
                 width: 127px;
@@ -93,9 +108,162 @@
             }
 
             &-text {
-                font-size: 16px;
+                max-width: 400px;
+            }
+        }
+    }
+}
+
+@include respond(lg) {
+    .promo {
+        padding-top: 60px;
+
+        &__info {
+            margin-top: 100px;
+
+            &-icon {
+                width: 150px;
+                height: auto;
             }
 
+        }
+
+        &__buttons {
+            margin-top: 150px;
+            gap: 25px;
+        }
+    }
+}
+
+@include respond(md) {
+    .promo {
+        padding: 40px 0 120px;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.1)),
+            url("../../img/promo.png") center center / cover no-repeat;
+
+        &__social {
+            align-items: center;
+            gap: 20px;
+
+            &::after {
+                display: none;
+            }
+
+            &-block {
+                flex-wrap: wrap;
+                justify-content: center;
+                column-gap: 15px;
+            }
+        }
+
+        &__info {
+            align-items: center;
+            text-align: center;
+            margin-top: 80px;
+
+            &-text {
+                font-size: 15px;
+                max-width: 90%;
+            }
+        }
+
+        &__buttons {
+            margin-top: 100px;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        &__btn {
+            width: 60%;
+        }
+
+    }
+}
+
+@include respond(sm) {
+    .promo {
+        padding: 24px 0 60px;
+
+        &__social {
+            flex-direction: column;
+            gap: 16px;
+
+            &-block {
+                column-gap: 12px;
+            }
+
+            &-icon {
+                font-size: 16px;
+            }
+        }
+
+        &__info {
+            margin-top: 60px;
+
+            &-icon {
+                width: 100px;
+            }
+
+            &-text {
+                font-size: 14px;
+                max-width: 95%;
+                line-height: 1.5;
+            }
+        }
+
+        &__buttons {
+            margin-top: 60px;
+            gap: 16px;
+        }
+
+        &__btn {
+            width: 80%;
+            height: 45px;
+        }
+
+    }
+}
+
+@include respond(xs) {
+    .promo {
+        padding: 20px 0 40px;
+
+        &__social {
+            gap: 12px;
+
+            &-block {
+                column-gap: 10px;
+            }
+
+            &-icon {
+                font-size: 14px;
+            }
+        }
+
+        &__info {
+            margin-top: 40px;
+
+            &-icon {
+                width: 80px;
+            }
+
+            &-text {
+                font-size: 13px;
+                max-width: 100%;
+                padding: 0 10px;
+                line-height: 1.5;
+            }
+        }
+
+        &__buttons {
+            margin-top: 40px;
+            gap: 12px;
+        }
+
+        &__btn {
+            width: 100%;
+            height: 50px;
         }
     }
 }

@@ -1,3 +1,6 @@
+@use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/base/variables.scss" as *;
+
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +16,7 @@ body {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
 }
 
 h1,
@@ -70,13 +74,25 @@ a {
 
 
 .container {
-    max-width: 1520px; // Примерная максимальная ширина контента
-    margin: 0 auto;
-    padding: 0 20px; // Горизонтальные отступы по бокам 
-}
+    padding: 0 200px;
 
-@media screen and (max-width: 1600px) {
-    .container {
-        max-width: 1140px;
+    @include respond(xl) {
+        padding: 0 120px;
+    }
+
+    @include respond(lg) {
+        padding: 0 80px;
+    }
+
+    @include respond(md) {
+        padding: 0 40px;
+    }
+
+    @include respond(sm) {
+        padding: 0 20px;
+    }
+
+    @include respond(xs) {
+        padding: 0 12px;
     }
 }

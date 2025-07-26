@@ -1,18 +1,14 @@
 @use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/base/variables.scss" as *;
 
 .title-h1 {
     @include title;
-    font-size: 60px;
+    font-size: clamp(36px, 5vw, 60px);
+    line-height: 1.2;
 }
 
 .title-h2 {
     @include title;
     font-size: 32px;
-    line-height: 141%;
-}
-
-@media screen and (max-width: 1400px) {
-    .title-h1 {
-        font-size: 40px;
-    }
+    line-height: 132%;
 }
