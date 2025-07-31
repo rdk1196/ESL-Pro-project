@@ -21,8 +21,8 @@ try {
         },
 
         navigation: {
-            nextEl: ".schedule__next",
-            prevEl: ".schedule__prev",
+            nextEl: ".schedule__nav-btn--next",
+            prevEl: ".schedule__nav-btn--prev",
         }
 
     });
