@@ -1,6 +1,8 @@
 @use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
 
 .schedule {
+    margin-top: -1px;
     padding: 140px 0 275px;
     background-color: $black-background;
 
@@ -239,5 +241,183 @@
             }
         }
     }
+}
 
+// ≥1600px
+@include respond(xl) {
+    .schedule {
+        &__card {
+            width: 320px;
+            height: 320px;
+            padding: 40px 30px;
+        }
+
+        &__watch {
+            width: 150px;
+            height: 40px;
+            font-size: 13px;
+        }
+
+        &__nav {
+            width: 400px;
+
+            &-btn {
+                width: 75px;
+                height: 75px;
+            }
+        }
+    }
+}
+
+// ≥1400px
+@include respond(lg) {
+    .schedule {
+        padding: 120px 0 220px;
+
+        &__card {
+            width: 300px;
+            height: 300px;
+            padding: 36px 28px;
+        }
+
+        &__groups {
+            font-size: 18px;
+        }
+
+        &__match {
+            width: 98px;
+            font-size: 13px;
+        }
+
+        &__nav {
+            width: 360px;
+        }
+
+        &__swiper {
+            margin-top: 80px;
+        }
+    }
+}
+
+// ≥1024x
+@include respond(md) {
+    .schedule {
+        padding: 100px 0 180px;
+
+        &__card {
+            width: 260px;
+            height: 280px;
+            padding: 30px 24px;
+        }
+
+        &__groups {
+            font-size: 16px;
+        }
+
+        &__match {
+            font-size: 12px;
+            padding: 4px 8px;
+        }
+
+        &__nav {
+            margin-top: 40px;
+        }
+    }
+}
+
+// ≥768px
+@include respond(sm) {
+    .schedule {
+        padding: 80px 0 120px;
+
+        &__card {
+            width: 220px;
+            height: 260px;
+            padding: 24px 20px;
+        }
+
+        &__groups {
+            font-size: 15px;
+        }
+
+        &__match {
+            padding: 4px 8px;
+        }
+
+        &__icon {
+            width: 40px;
+            height: 40px;
+        }
+
+        &__swiper {
+            margin-top: 60px;
+        }
+
+        &__nav {
+            margin-top: 30px;
+            height: 75px;
+
+            &-btn {
+                display: none;
+            }
+
+            .swiper-pagination-bullet {
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
+}
+
+// ≥480px
+@include respond(xs) {
+    .schedule {
+        padding: 60px 0 80px;
+
+        &__card {
+            width: 90%;
+            height: auto;
+            padding: 20px 16px;
+        }
+
+        &__groups {
+            font-size: 14px;
+        }
+
+        &__match {
+            font-size: 10px;
+            padding: 3px 6px;
+            width: 50%;
+            text-align: center;
+        }
+
+        &__icon {
+            width: 36px;
+            height: 36px;
+        }
+
+        &__watch {
+            width: 50%;
+            height: 36px;
+            font-size: 13px;
+        }
+
+        &__swiper {
+            margin-top: 50px;
+        }
+
+        &__nav {
+            margin-top: 24px;
+            height: 60px;
+        }
+
+        .swiper-pagination {
+            bottom: 10px;
+        }
+
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+        }
+    }
 }

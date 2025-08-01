@@ -14,6 +14,32 @@ try {
         slidesPerView: 4,
         spaceBetween: 40,
         speed: 1000,
+        breakpoints: {
+            1600: {
+                slidesPerView: 4,
+                spaceBetween: 32
+            },
+            1400: {
+                slidesPerView: 3.5,
+                spaceBetween: 28
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 24
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            480: {
+                slidesPerView: 1,
+                spaceBetween: 16
+            },
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 16
+            }
+        },
 
         pagination: {
             el: '.swiper-pagination',
