@@ -1,0 +1,239 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.stages {
+    padding: 120px 0 106px 0;
+    background-color: $dark-yellow;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 112px;
+
+    }
+
+    &__info {
+        width: 608px;
+    }
+
+    &__title {
+        line-height: 109%;
+        color: $dark;
+    }
+
+    &__text {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 167%;
+        letter-spacing: 0.01em;
+        color: $dark;
+    }
+
+    &__highlight {
+        color: $light;
+    }
+
+    &__steps {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        gap: 71px;
+        transform: translateY(-30px);
+    }
+
+    &__step {
+        position: relative;
+        width: 221px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 100%;
+            margin-left: 3px;
+            height: 2px;
+            width: 76px;
+            background-color: $light;
+        }
+
+        &:last-child::before {
+            content: none;
+        }
+    }
+
+    &__icon {
+        margin: 0 auto;
+    }
+
+    &__content {
+        margin-top: 30px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        line-height: 1.4;
+    }
+
+    &__label {
+        font-weight: 700;
+    }
+
+    &__time {
+        font-weight: 400;
+    }
+
+    &__btn {
+        margin-top: 68px;
+        align-self: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 5px;
+        padding: 10px 20px;
+        width: 341px;
+        height: 60px;
+        background-color: $light;
+        cursor: pointer;
+
+        &-icon {
+            height: 24px;
+        }
+
+        &-text {
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+}
+
+//1600px 
+@include respond(xl) {
+    .stages {
+        &__wrapper {
+            gap: 80px;
+        }
+
+        &__steps {
+            gap: 50px;
+            transform: translateY(-20px);
+        }
+    }
+}
+
+// 1400px
+@include respond(lg) {
+    .stages {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+            gap: 60px;
+        }
+
+        &__info {
+            width: 100%;
+            text-align: center;
+        }
+
+        &__text {
+            font-size: 17px;
+        }
+
+        &__steps {
+            justify-content: center;
+            transform: none;
+            gap: 40px;
+        }
+
+        &__step {
+            &::before {
+                width: 50px;
+            }
+        }
+    }
+}
+
+// ↓ 1024px
+@include respond(md) {
+    .stages {
+        &__step {
+            width: 200px;
+        }
+
+        &__btn {
+            width: 100%;
+            margin-top: 48px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+    }
+}
+
+//768px
+@include respond(sm) {
+    .stages {
+        &__steps {
+            gap: 32px;
+        }
+
+        &__step {
+            width: 160px;
+
+            &::before {
+                width: 30px;
+            }
+        }
+
+        &__btn {
+            padding: 12px 16px;
+            height: auto;
+            margin-top: 24px;
+
+            &-text {
+                font-size: 14px;
+            }
+
+            &-icon {
+                height: 20px;
+            }
+        }
+
+        &__text {
+            font-size: 15px;
+        }
+    }
+}
+
+//480px
+@include respond(xs) {
+    .stages {
+        padding: 60px 0 60px 0;
+
+        &__title {
+            font-size: 24px;
+        }
+
+        &__text {
+            font-size: 15px;
+        }
+
+        &__steps {
+            width: 100%;
+        }
+
+        &__content {
+            margin-top: 24px;
+            gap: 4px;
+        }
+
+        &__btn {
+            width: 280px;
+
+            &-text {
+                font-size: 14px;
+            }
+        }
+    }
+}
