@@ -1,0 +1,177 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.participants {
+    background: url("../../img/bg.png") center center / cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+
+    &__wrapper {
+        margin-top: 512px;
+        display: flex;
+        flex-direction: column;
+        max-width: 652px;
+        max-height: 633px;
+    }
+
+    &__title {
+        line-height: 141%;
+        text-align: center;
+    }
+
+    &__timer {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 180%;
+        color: $light;
+        text-align: center;
+    }
+
+
+    &__table {
+        width: 652px;
+        border-collapse: collapse;
+        border-spacing: 0;
+        border: 1px solid $dark-yellow;
+
+
+
+        &-body .participants__table-row:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        &-row--head {
+            height: 55px;
+            background-color: $dark-yellow;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 175%;
+            border: 1px solid transparent;
+        }
+
+
+        &-body {
+            background: $black-gray;
+        }
+
+        &-data {
+            border: 1px solid $dark-yellow;
+            text-align: center;
+            padding: 10px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 175%;
+            color: $light;
+        }
+    }
+
+    &__player {
+        display: flex;
+        gap: 8.5px;
+        font-weight: 500;
+    }
+
+    &__list {
+        margin-top: 56px;
+        display: flex;
+        gap: 126px;
+        justify-content: center;
+        color: $light;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 175%;
+        text-transform: uppercase;
+    }
+}
+
+//1600px
+@include respond(xl) {
+    .participants {
+        &__wrapper {
+            margin-top: 450px;
+        }
+    }
+}
+
+//1400px
+@include respond(lg) {
+    .participants {
+        &__wrapper {
+            margin-top: 400px;
+        }
+
+        &__table {
+            width: 100%;
+        }
+
+        &__list {
+            gap: 80px;
+        }
+    }
+}
+
+//1024px
+@include respond(md) {
+    .participants {
+        &__wrapper {
+            margin-top: 300px;
+            max-width: 500px;
+        }
+
+        &__table {
+            &-data {
+                font-size: 18px;
+            }
+        }
+
+        &__timer {
+            font-size: 22px;
+        }
+
+        &__list {
+            gap: 50px;
+            font-size: 18px;
+        }
+    }
+}
+
+//768px
+@include respond(sm) {
+    .participants {
+        justify-content: center;
+
+        &__table-wrapper {
+            overflow-x: auto;
+        }
+
+        &__table {
+            width: 100%;
+        }
+
+        &__list {
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    }
+}
+
+//480px 
+@include respond(xs) {
+    .participants {
+        &__wrapper {
+            margin-top: 200px;
+            max-width: 100%;
+            padding: 0 10px;
+        }
+
+        &__timer {
+            font-size: 18px;
+        }
+
+        &__list {
+            font-size: 16px;
+            gap: 20px;
+        }
+    }
+}
