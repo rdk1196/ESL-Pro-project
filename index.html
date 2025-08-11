@@ -79,196 +79,473 @@
         <div class="container">
             <h2 class="schedule__title title-h2">Schedule and results</h2>
 
-            <div class="schedule__buttons">
-                <button class="schedule__btn btn">matches</button>
-                <button class="schedule__btn btn">battles</button>
+            <div class="schedule__tabs" role="tablist" aria-label="Schedule tabs">
+                <button type="button" class="schedule__tab" role="tab" id="tab-matches" aria-controls="panel-matches"
+                    aria-selected="false">matches</button>
+                <button type="button" class="schedule__tab " role="tab" id="tab-battles" aria-controls="panel-battles"
+                    aria-selected="true">battles</button>
+            </div>
+
+            <div class="schedule__content">
+
+                <div class="schedule__content-item" id="panel-matches" role="tabpanel" aria-labelledby="tab-matches"
+                    hidden>
+                    <div class="swiper schedule__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="schedule__card">
+                                    <div class="schedule__card-content">
+
+                                        <p class="schedule__card-event">Asia Minor: Play-Off</p>
+                                        <div class="schedule__date">
+                                            <p class="schedule__day">29 Oct</p>
+                                            <p class="schedule__date-time">19:00</p>
+                                        </div>
+
+                                        <div class="schedule__info">
+
+                                            <div class="schedule__teams">
+                                                <img src="/src/icons/teamsIcons/AlphaTeamIcon.png" alt="AlphaTeam"
+                                                    class="schedule__teams-icon">
+                                                <img src="/src/icons/teamsIcons/NoPingIcon.png" alt="NoPing"
+                                                    class="schedule__teams-icon">
+                                            </div>
+
+                                            <div class="schedule__details">
+
+                                                <div class="schedule__players">
+                                                    <div class="schedule__player">
+                                                        <p class="schedule__name">Jenny Bell</p>
+                                                        <div class="schedule__bet">3.22</div>
+                                                    </div>
+
+                                                    <div class="schedule__player">
+                                                        <p class="schedule__name">Arlene Robertson</p>
+                                                        <div class="schedule__bet">53.22</div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="schedule__timer">
+                                                <p class="schedule__time">Starts in: 5 hours 39 min • Bо 3</p>
+                                                <img src="/src/icons/BetMakerIcon.png" alt="BetMakerIcon"
+                                                    class="schedule__bet-icon">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <a href="#" class="schedule__watch">
+                                        <span class="schedule__watch-icon"></span> WATCH LIVE
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="schedule__card">
+                                    <div class="schedule__card-content">
+
+                                        <p class="schedule__card-event">Asia Minor: Play-Off</p>
+                                        <div class="schedule__date">
+                                            <p class="schedule__day">29 Oct</p>
+                                            <p class="schedule__date-time">19:00</p>
+                                        </div>
+
+                                        <div class="schedule__info">
+
+                                            <div class="schedule__teams">
+                                                <img src="/src/icons/teamsIcons/peopleTeamIcon.png" alt="people Team"
+                                                    class="schedule__teams-icon">
+                                                <img src="/src/icons/teamsIcons/ForzeTeamIcon.png" alt="ForzeTeam"
+                                                    class="schedule__teams-icon">
+                                            </div>
+
+                                            <div class="schedule__details">
+
+                                                <div class="schedule__players">
+                                                    <div class="schedule__player">
+                                                        <p class="schedule__name">Regina Watson</p>
+                                                        <div class="schedule__bet">3.22</div>
+                                                    </div>
+
+                                                    <div class="schedule__player">
+                                                        <p class="schedule__name">Kathryn Jones</p>
+                                                        <div class="schedule__bet">53.22</div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="schedule__timer">
+                                                <p class="schedule__time">Starts in: 5 hours 39 min • Bо 3</p>
+                                                <img src="/src/icons/BetMakerIcon.png" alt="BetMakerIcon"
+                                                    class="schedule__bet-icon">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <a href="#" class="schedule__watch">
+                                        <span class="schedule__watch-icon"></span> WATCH LIVE
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="schedule__card">
+                                    <div class="schedule__card-content">
+
+                                        <p class="schedule__card-event">Asia Minor: Play-Off</p>
+                                        <div class="schedule__date">
+                                            <p class="schedule__day">29 Oct</p>
+                                            <p class="schedule__date-time">19:00</p>
+                                        </div>
+
+                                        <div class="schedule__info">
+
+                                            <div class="schedule__teams">
+                                                <img src="/src/icons/teamsIcons/BoomTeamIcon.png" alt="BoomTeam"
+                                                    class="schedule__teams-icon">
+                                                <img src="/src/icons/teamsIcons/ATeamIcon.png" alt="ATeam"
+                                                    class="schedule__teams-icon">
+                                            </div>
+
+                                            <div class="schedule__details">
+
+                                                <div class="schedule__players">
+                                                    <div class="schedule__player">
+                                                        <p class="schedule__name">Ricardo Hawkins</p>
+                                                        <div class="schedule__bet">3.22</div>
+                                                    </div>
+
+                                                    <div class="schedule__player">
+                                                        <p class="schedule__name">Bruce Simmons</p>
+                                                        <div class="schedule__bet">53.22</div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="schedule__timer">
+                                                <p class="schedule__time">Starts in: 5 hours 39 min • Bо 3</p>
+                                                <img src="/src/icons/BetMakerIcon.png" alt="BetMakerIcon"
+                                                    class="schedule__bet-icon">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <a href="#" class="schedule__watch">
+                                        <span class="schedule__watch-icon"></span> WATCH LIVE
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="schedule__card">
+                                    <div class="schedule__card-content">
+
+                                        <p class="schedule__card-event">Asia Minor: Play-Off</p>
+                                        <div class="schedule__date">
+                                            <p class="schedule__day">29 Oct</p>
+                                            <p class="schedule__date-time">19:00</p>
+                                        </div>
+
+                                        <div class="schedule__info">
+
+                                            <div class="schedule__teams">
+                                                <img src="/src/icons/teamsIcons/peopleTeamIcon.png" alt="people Team"
+                                                    class="schedule__teams-icon">
+                                                <img src="/src/icons/teamsIcons/ForzeTeamIcon.png" alt="ForzeTeam"
+                                                    class="schedule__teams-icon">
+                                            </div>
+
+                                            <div class="schedule__details">
+
+                                                <div class="schedule__players">
+                                                    <div class="schedule__player">
+                                                        <p class="schedule__name">Regina Watson</p>
+                                                        <div class="schedule__bet">3.22</div>
+                                                    </div>
+
+                                                    <div class="schedule__player">
+                                                        <p class="schedule__name">Kathryn Jones</p>
+                                                        <div class="schedule__bet">53.22</div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="schedule__timer">
+                                                <p class="schedule__time">Starts in: 5 hours 39 min • Bо 3</p>
+                                                <img src="/src/icons/BetMakerIcon.png" alt="BetMakerIcon"
+                                                    class="schedule__bet-icon">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <a href="#" class="schedule__watch">
+                                        <span class="schedule__watch-icon"></span> WATCH LIVE
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="schedule__card">
+                                    <div class="schedule__card-content">
+
+                                        <p class="schedule__card-event">Asia Minor: Play-Off</p>
+                                        <div class="schedule__date">
+                                            <p class="schedule__day">29 Oct</p>
+                                            <p class="schedule__date-time">19:00</p>
+                                        </div>
+
+                                        <div class="schedule__info">
+
+                                            <div class="schedule__teams">
+                                                <img src="/src/icons/teamsIcons/peopleTeamIcon.png" alt="people Team"
+                                                    class="schedule__teams-icon">
+                                                <img src="/src/icons/teamsIcons/ForzeTeamIcon.png" alt="ForzeTeam"
+                                                    class="schedule__teams-icon">
+                                            </div>
+
+                                            <div class="schedule__details">
+
+                                                <div class="schedule__players">
+                                                    <div class="schedule__player">
+                                                        <p class="schedule__name">Regina Watson</p>
+                                                        <div class="schedule__bet">3.22</div>
+                                                    </div>
+
+                                                    <div class="schedule__player">
+                                                        <p class="schedule__name">Kathryn Jones</p>
+                                                        <div class="schedule__bet">53.22</div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="schedule__timer">
+                                                <p class="schedule__time">Starts in: 5 hours 39 min • Bо 3</p>
+                                                <img src="/src/icons/BetMakerIcon.png" alt="BetMakerIcon"
+                                                    class="schedule__bet-icon">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <a href="#" class="schedule__watch">
+                                        <span class="schedule__watch-icon"></span> WATCH LIVE
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="schedule__nav">
+
+                            <button class="schedule__nav-btn schedule__nav-btn--prev" aria-label="Previous">
+                                <span class="swiper-button-prev"></span>
+                            </button>
+
+
+                            <div class="swiper-pagination"></div>
+
+                            <button class="schedule__nav-btn schedule__nav-btn--next" aria-label="Next">
+                                <span class="swiper-button-next"></span>
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="schedule__content-item" id="panel-battles" role="tabpanel" aria-labelledby="tab-battles">
+                    <div class="swiper schedule__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="schedule__card">
+                                    <div class="schedule__card-content">
+
+                                        <p class="schedule__card-title">Group Stage</p>
+
+                                        <div class="schedule__info">
+
+                                            <img src="/src/icons/group.png" alt="group" class="schedule__icon">
+
+                                            <div class="schedule__details">
+
+                                                <div class="schedule__groups">
+                                                    <p class="schedule__group">Group A</p>
+                                                    <p class="schedule__group">Group B</p>
+                                                </div>
+
+                                                <div class="schedule__match">
+                                                    match #1
+                                                </div>
+
+                                            </div>
+
+                                            <p class="schedule__map">Map: Erangel</p>
+
+                                        </div>
+                                    </div>
+                                    <a href="#" class="schedule__watch">
+                                        <span class="schedule__watch-icon"></span> WATCH LIVE
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="schedule__card">
+                                    <div class="schedule__card-content">
+
+                                        <p class="schedule__card-title">Group Stage</p>
+
+                                        <div class="schedule__info">
+
+                                            <img src="/src/icons/group.png" alt="group" class="schedule__icon">
+
+                                            <div class="schedule__details">
+
+                                                <div class="schedule__groups">
+                                                    <p class="schedule__group">Group A</p>
+                                                    <p class="schedule__group">Group B</p>
+                                                </div>
+
+                                                <div class="schedule__match">
+                                                    match #1
+                                                </div>
+
+                                            </div>
+
+                                            <p class="schedule__map">Map: Erangel</p>
+
+                                        </div>
+                                    </div>
+                                    <a href="#" class="schedule__watch">
+                                        <span class="schedule__watch-icon"></span> WATCH LIVE
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="schedule__card">
+                                    <div class="schedule__card-content">
+
+                                        <p class="schedule__card-title">Group Stage</p>
+
+                                        <div class="schedule__info">
+
+                                            <img src="/src/icons/group.png" alt="group" class="schedule__icon">
+
+                                            <div class="schedule__details">
+
+                                                <div class="schedule__groups">
+                                                    <p class="schedule__group">Group A</p>
+                                                    <p class="schedule__group">Group B</p>
+                                                </div>
+
+                                                <div class="schedule__match">
+                                                    match #1
+                                                </div>
+
+                                            </div>
+
+                                            <p class="schedule__map">Map: Erangel</p>
+
+                                        </div>
+                                    </div>
+                                    <a href="#" class="schedule__watch">
+                                        <span class="schedule__watch-icon"></span> WATCH LIVE
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="schedule__card">
+                                    <div class="schedule__card-content">
+
+                                        <p class="schedule__card-title">Group Stage</p>
+
+                                        <div class="schedule__info">
+
+                                            <img src="/src/icons/group.png" alt="group" class="schedule__icon">
+
+                                            <div class="schedule__details">
+
+                                                <div class="schedule__groups">
+                                                    <p class="schedule__group">Group A</p>
+                                                    <p class="schedule__group">Group B</p>
+                                                </div>
+
+                                                <div class="schedule__match">
+                                                    match #1
+                                                </div>
+
+                                            </div>
+
+                                            <p class="schedule__map">Map: Erangel</p>
+
+                                        </div>
+                                    </div>
+                                    <a href="#" class="schedule__watch">
+                                        <span class="schedule__watch-icon"></span> WATCH LIVE
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="schedule__card">
+                                    <div class="schedule__card-content">
+
+                                        <p class="schedule__card-title">Group Stage</p>
+
+                                        <div class="schedule__info">
+
+                                            <img src="/src/icons/group.png" alt="group" class="schedule__icon">
+
+                                            <div class="schedule__details">
+
+                                                <div class="schedule__groups">
+                                                    <p class="schedule__group">Group A</p>
+                                                    <p class="schedule__group">Group B</p>
+                                                </div>
+
+                                                <div class="schedule__match">
+                                                    match #1
+                                                </div>
+
+                                            </div>
+
+                                            <p class="schedule__map">Map: Erangel</p>
+
+                                        </div>
+                                    </div>
+                                    <a href="#" class="schedule__watch">
+                                        <span class="schedule__watch-icon"></span> WATCH LIVE
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="schedule__nav">
+
+                            <button class="schedule__nav-btn schedule__nav-btn--prev" aria-label="Previous">
+                                <span class="swiper-button-prev"></span>
+                            </button>
+
+
+                            <div class="swiper-pagination"></div>
+
+                            <button class="schedule__nav-btn schedule__nav-btn--next" aria-label="Next">
+                                <span class="swiper-button-next"></span>
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
 
-            <div class="swiper schedule__swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="schedule__card">
-                            <div class="schedule__card-content">
 
-                                <p class="schedule__card-title">Group Stage</p>
-
-                                <div class="schedule__info">
-
-                                    <img src="/src/icons/group.png" alt="group" class="schedule__icon">
-
-                                    <div class="schedule__details">
-
-                                        <div class="schedule__groups">
-                                            <p class="schedule__group">Group A</p>
-                                            <p class="schedule__group">Group B</p>
-                                        </div>
-
-                                        <div class="schedule__match">
-                                            match #1
-                                        </div>
-
-                                    </div>
-
-                                    <p class="schedule__map">Map: Erangel</p>
-
-                                </div>
-                            </div>
-                            <a href="#" class="schedule__watch">
-                                <span class="schedule__watch-icon"></span> WATCH LIVE
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="schedule__card">
-                            <div class="schedule__card-content">
-
-                                <p class="schedule__card-title">Group Stage</p>
-
-                                <div class="schedule__info">
-
-                                    <img src="/src/icons/group.png" alt="group" class="schedule__icon">
-
-                                    <div class="schedule__details">
-
-                                        <div class="schedule__groups">
-                                            <p class="schedule__group">Group A</p>
-                                            <p class="schedule__group">Group B</p>
-                                        </div>
-
-                                        <div class="schedule__match">
-                                            match #1
-                                        </div>
-
-                                    </div>
-
-                                    <p class="schedule__map">Map: Erangel</p>
-
-                                </div>
-                            </div>
-                            <a href="#" class="schedule__watch">
-                                <span class="schedule__watch-icon"></span> WATCH LIVE
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="schedule__card">
-                            <div class="schedule__card-content">
-
-                                <p class="schedule__card-title">Group Stage</p>
-
-                                <div class="schedule__info">
-
-                                    <img src="/src/icons/group.png" alt="group" class="schedule__icon">
-
-                                    <div class="schedule__details">
-
-                                        <div class="schedule__groups">
-                                            <p class="schedule__group">Group A</p>
-                                            <p class="schedule__group">Group B</p>
-                                        </div>
-
-                                        <div class="schedule__match">
-                                            match #1
-                                        </div>
-
-                                    </div>
-
-                                    <p class="schedule__map">Map: Erangel</p>
-
-                                </div>
-                            </div>
-                            <a href="#" class="schedule__watch">
-                                <span class="schedule__watch-icon"></span> WATCH LIVE
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="schedule__card">
-                            <div class="schedule__card-content">
-
-                                <p class="schedule__card-title">Group Stage</p>
-
-                                <div class="schedule__info">
-
-                                    <img src="/src/icons/group.png" alt="group" class="schedule__icon">
-
-                                    <div class="schedule__details">
-
-                                        <div class="schedule__groups">
-                                            <p class="schedule__group">Group A</p>
-                                            <p class="schedule__group">Group B</p>
-                                        </div>
-
-                                        <div class="schedule__match">
-                                            match #1
-                                        </div>
-
-                                    </div>
-
-                                    <p class="schedule__map">Map: Erangel</p>
-
-                                </div>
-                            </div>
-                            <a href="#" class="schedule__watch">
-                                <span class="schedule__watch-icon"></span> WATCH LIVE
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="schedule__card">
-                            <div class="schedule__card-content">
-
-                                <p class="schedule__card-title">Group Stage</p>
-
-                                <div class="schedule__info">
-
-                                    <img src="/src/icons/group.png" alt="group" class="schedule__icon">
-
-                                    <div class="schedule__details">
-
-                                        <div class="schedule__groups">
-                                            <p class="schedule__group">Group A</p>
-                                            <p class="schedule__group">Group B</p>
-                                        </div>
-
-                                        <div class="schedule__match">
-                                            match #1
-                                        </div>
-
-                                    </div>
-
-                                    <p class="schedule__map">Map: Erangel</p>
-
-                                </div>
-                            </div>
-                            <a href="#" class="schedule__watch">
-                                <span class="schedule__watch-icon"></span> WATCH LIVE
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="schedule__nav">
-
-                    <button class="schedule__nav-btn schedule__nav-btn--prev" aria-label="Previous">
-                        <span class="swiper-button-prev"></span>
-                    </button>
-
-
-                    <div class="swiper-pagination"></div>
-
-                    <button class="schedule__nav-btn schedule__nav-btn--next" aria-label="Next">
-                        <span class="swiper-button-next"></span>
-                    </button>
-
-                </div>
-
-            </div>
 
     </section>
 

@@ -6,7 +6,7 @@
     padding: 140px 0 147px;
     background-color: $black-background;
 
-    &__buttons {
+    &__tabs {
         position: relative;
         margin-top: 40px;
         display: flex;
@@ -14,14 +14,30 @@
         &::before {
             content: "";
             position: absolute;
+            top: 0;
+            left: 0;
             background-color: $dark-yellow;
             height: 2px;
             width: 100%;
         }
     }
 
-    &__btn {
+    &__tab {
+        border: 1px solid $dark-yellow;
+        padding: 15px 31px;
+        width: 152px;
+        height: 60px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 167%;
+        letter-spacing: 0.01em;
+        color: $light;
         text-transform: capitalize;
+
+        &[aria-selected="true"] {
+            background: $dark-yellow;
+            color: $light;
+        }
     }
 
     &__swiper {
@@ -46,7 +62,8 @@
             filter: brightness(1); // По умолчанию все блоки контента яркие
         }
 
-        &-title {
+        &-title,
+        &-event {
             position: relative;
             font-weight: 400;
             font-size: 14px;
@@ -54,6 +71,7 @@
             letter-spacing: 0.01em;
             text-align: left;
             color: $light;
+
 
             &::after {
                 content: "";
@@ -67,8 +85,37 @@
         }
     }
 
+    &__date {
+        width: 54px;
+        display: flex;
+        flex-direction: column;
+        color: $light;
+        transform: translateY(-48px) translateX(225px);
+
+        &-time {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 100%;
+            letter-spacing: 0.01em;
+        }
+
+    }
+
+    &__day {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 167%;
+        letter-spacing: 0.01em;
+    }
+
     &__info {
         margin-top: 22px;
+    }
+
+    &__teams {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
     }
 
     &__icon {
@@ -89,7 +136,41 @@
         display: flex;
         flex-direction: column;
         font-size: 20px;
+        font-weight: 700;
         line-height: 175%;
+        align-items: flex-start;
+    }
+
+    &__players {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 175%;
+        gap: 15px;
+    }
+
+    &__player {
+        display: flex;
+        justify-content: space-between;
+        gap: 13px;
+    }
+
+    &__name {
+        width: 205px;
+        text-align: start;
+    }
+
+    &__bet {
+        border: 1px solid $dark-yellow;
+        padding: 5px 10px;
+        width: 58px;
+        height: 30px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
     }
 
     &__match {
@@ -103,6 +184,24 @@
         letter-spacing: 0.02em;
         text-transform: uppercase;
         word-break: break-word;
+    }
+
+    &__timer {
+        margin-top: 15px;
+        display: flex;
+        gap: 32px;
+    }
+
+    &__time {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 167%;
+        letter-spacing: 0.01em;
+        color: $light-gray;
+    }
+
+    &__bet-icon {
+        height: 15px;
     }
 
     &__map {
@@ -258,6 +357,18 @@
             font-size: 13px;
         }
 
+        &__date {
+            transform: translateY(-45px) translateX(210px);
+        }
+
+        &__timer {
+            margin-top: 10px;
+        }
+
+        &__time {
+            line-height: 12px;
+        }
+
         &__nav {
             width: 400px;
 
@@ -280,13 +391,22 @@
             padding: 36px 28px;
         }
 
-        &__groups {
+        &__groups,
+        &__players {
             font-size: 18px;
+        }
+
+        &__name {
+            width: 180px;
         }
 
         &__match {
             width: 98px;
             font-size: 13px;
+        }
+
+        &__timer {
+            margin-top: 5px;
         }
 
         &__nav {
@@ -306,12 +426,25 @@
 
         &__card {
             width: 260px;
-            height: 280px;
+            height: 300px;
             padding: 30px 24px;
         }
 
-        &__groups {
+        &__date {
+            transform: translateY(-45px) translateX(176px);
+        }
+
+        &__groups,
+        &__players {
             font-size: 16px;
+        }
+
+        &__players {
+            gap: 15px;
+        }
+
+        &__name {
+            width: 160px;
         }
 
         &__match {
@@ -331,12 +464,21 @@
         padding: 80px 0 120px;
 
         &__card {
-            width: 220px;
-            height: 260px;
+            width: 250px;
+            height: 300px;
             padding: 24px 20px;
         }
 
-        &__groups {
+        &__date {
+            transform: translateY(-40px) translateX(155px);
+
+            &-time {
+                font-size: 16px;
+            }
+        }
+
+        &__groups,
+        &__players {
             font-size: 15px;
         }
 

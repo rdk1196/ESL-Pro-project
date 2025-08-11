@@ -12,6 +12,7 @@
     text-transform: uppercase;
 
     &:hover,
+    &:active,
     &:focus {
         background: $dark-yellow;
         color: $dark;

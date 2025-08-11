@@ -55,3 +55,64 @@ try {
 }
 catch (e) { }
 
+
+try {
+    const tabs = [...document.querySelectorAll('.schedule__tab[role="tab"]')];
+    const panels = [...document.querySelectorAll('.schedule__content-item[role="tabpanel"]')];
+
+    // хелпер: активируем таб и связанную панель
+    function activate(tab) {
+        const panelId = tab.getAttribute('aria-controls');
+        const panel = document.getElementById(panelId);
+
+        // Табы
+        tabs.forEach(t => {
+            const isActive = t === tab;
+            t.classList.toggle('schedule__tab--active', isActive);
+            t.setAttribute('aria-selected', String(isActive));
+            t.setAttribute('tabindex', isActive ? '0' : '-1');
+        });
+
+        // Панели
+        panels.forEach(p => p.hidden = p !== panel);
+
+        // Если внутри панели Swiper — обновим размеры (по желанию)
+        panel._swiper?.update?.();
+    }
+
+    // Инициализация: найти таб с aria-selected="true"
+    const initial = tabs.find(t => t.getAttribute('aria-selected') === 'true') || tabs[0];
+    // Сначала спрячем все панели атрибутом hidden
+    panels.forEach(p => p.hidden = true);
+    activate(initial);
+
+    // Клики
+    tabs.forEach(t => t.addEventListener('click', () => activate(t)));
+
+
+} catch (e) {
+    console.error('[schedule tabs]', e);
+}
+
+
+
+// try {
+//     const tabs = document.querySelectorAll(".schedule__tab");
+//     const contents = document.querySelectorAll(".schedule__content-item");
+
+//     tabs.forEach((tab, index) => {
+//         tab.addEventListener("click", () => {
+//             tabs.forEach((t) => t.classList.remove("schedule__tab--active"));
+//             tab.classList.add("schedule__tab--active");
+
+//             contents.forEach((c) => (c.style.display = "none"));
+//             contents[index].style.display = "block";
+//         });
+//     });
+
+//     contents.forEach((c, i) => (c.style.display = i === 0 ? "block" : "none"));
+// }
+// catch (e) { }
+
+
+

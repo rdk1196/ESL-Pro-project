@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap"
+        rel="stylesheet">
+    <title>Esl Pro league CSGO</title>
+  <script type="module" crossorigin src="/assets/main-8muMq1o0.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-T6UNlPut.css">
+</head>
+
+<body>
+    <header class="promo">
+
+        <div class="container">
+            <div class="promo__social">
+
+                <img src="data:image/png;base64,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" alt="ArmyStar" class="promo__star">
+
+                <ul class="promo__social-block">
+                    <li>
+                        <a href="https://x.com" aria-label="Twitter">
+                            <span class="promo__social-icon icon-twitter"></span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.twitch.tv" aria-label="Twitch">
+                            <span class="promo__social-icon icon-twitch"></span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.facebook.com" aria-label="Facebook">
+                            <span class="promo__social-icon icon-facebook"></span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://m.vk.com" aria-label="Vkontakte">
+                            <span class="promo__social-icon icon-vkontakte"></span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="promo__info">
+
+                <img src="/assets/pubg-XjsSTmwi.png" alt="battlegrounds" class="promo__info-icon">
+
+                <h1 class="promo__info-title title-h1">ESL Pro League CSGO</h1>
+
+                <p class="promo__info-text">
+                    League CS:GO is the new online league in Counter-Strike: Global Offensive, with $100,000 total
+                    prize
+                    pool. 16 teams from
+                    Europe and the CIS will take part in the League, with 4 teams going to League through open
+                    qualifiers.
+                </p>
+
+            </div>
+
+            <div class="promo__buttons">
+
+                <button class="promo__btn btn">read announcment</button>
+                <button class="promo__btn btn">get tickets</button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="schedule">
+
+        <div class="container">
+            <h2 class="schedule__title title-h2">Schedule and results</h2>
+
+            <div class="schedule__tabs" role="tablist" aria-label="Schedule tabs">
+                <button type="button" class="schedule__tab" role="tab" id="tab-matches" aria-controls="panel-matches"
+                    aria-selected="false">matches</button>
+                <button type="button" class="schedule__tab " role="tab" id="tab-battles" aria-controls="panel-battles"
+                    aria-selected="true">battles</button>
+            </div>
+
+            <div class="schedule__content">
+
+                <div class="schedule__content-item" id="panel-matches" role="tabpanel" aria-labelledby="tab-matches"
+                    hidden>
+                    <div class="swiper schedule__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="schedule__card">
+                                    <div class="schedule__card-content">
+
+                                        <p class="schedule__card-event">Asia Minor: Play-Off</p>
+                                        <div class="schedule__date">
+                                            <p class="schedule__day">29 Oct</p>
+                                            <p class="schedule__date-time">19:00</p>
+                                        </div>
+
+                                        <div class="schedule__info">
+
+                                            <div class="schedule__teams">
+                                                <img src="/assets/AlphaTeamIcon-vgtVNsEF.png" alt="AlphaTeam"
+                                                    class="schedule__teams-icon">
+                                                <img src="data:image/png;base64,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" alt="NoPing"
+                                                    class="schedule__teams-icon">
+                                            </div>
+
+                                            <div class="schedule__details">
+
+                                                <div class="schedule__players">
+                                                    <div class="schedule__player">
+                                                        <p class="schedule__name">Jenny Bell</p>
+                                                        <div class="schedule__bet">3.22</div>
+                                                    </div>
+
+                                                    <div class="schedule__player">
+                                                        <p class="schedule__name">Arlene Robertson</p>
+                                                        <div class="schedule__bet">53.22</div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="schedule__timer">
+                                                <p class="schedule__time">Starts in: 5 hours 39 min • Bо 3</p>
+                                                <img src="data:image/png;base64,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" alt="BetMakerIcon"
+                                                    class="schedule__bet-icon">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <a href="#" class="schedule__watch">
+                                        <span class="schedule__watch-icon"></span> WATCH LIVE
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="schedule__card">
+                                    <div class="schedule__card-content">
+
+                                        <p class="schedule__card-event">Asia Minor: Play-Off</p>
+                                        <div class="schedule__date">
+                                            <p class="schedule__day">29 Oct</p>
+                                            <p class="schedule__date-time">19:00</p>
+                                        </div>
+
+                                        <div class="schedule__info">
+
+                                            <div class="schedule__teams">
+                                                <img src="data:image/png;base64,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" alt="people Team"
+                                                    class="schedule__teams-icon">
+                                                <img src="/assets/ForzeTeamIcon-CZA-u-j4.png" alt="ForzeTeam"
+                                                    class="schedule__teams-icon">
+                                            </div>
+
+                                            <div class="schedule__details">
+
+                                                <div class="schedule__players">
+                                                    <div class="schedule__player">
+                                                        <p class="schedule__name">Regina Watson</p>
+                                                        <div class="schedule__bet">3.22</div>
+                                                    </div>
+
+                                                    <div class="schedule__player">
+                                                        <p class="schedule__name">Kathryn Jones</p>
+                                                        <div class="schedule__bet">53.22</div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="schedule__timer">
+                                                <p class="schedule__time">Starts in: 5 hours 39 min • Bо 3</p>
+                                                <img src="data:image/png;base64,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" alt="BetMakerIcon"
+                                                    class="schedule__bet-icon">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <a href="#" class="schedule__watch">
+                                        <span class="schedule__watch-icon"></span> WATCH LIVE
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="schedule__card">
+                                    <div class="schedule__card-content">
+
+                                        <p class="schedule__card-event">Asia Minor: Play-Off</p>
+                                        <div class="schedule__date">
+                                            <p class="schedule__day">29 Oct</p>
+                                            <p class="schedule__date-time">19:00</p>
+                                        </div>
+
+                                        <div class="schedule__info">
+
+                                            <div class="schedule__teams">
+                                                <img src="/assets/BoomTeamIcon-BMEgBypw.png" alt="BoomTeam"
+                                                    class="schedule__teams-icon">
+                                                <img src="data:image/png;base64,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" alt="ATeam"
+                                                    class="schedule__teams-icon">
+                                            </div>
+
+                                            <div class="schedule__details">
+
+                                                <div class="schedule__players">
+                                                    <div class="schedule__player">
+                                                        <p class="schedule__name">Ricardo Hawkins</p>
+                                                        <div class="schedule__bet">3.22</div>
+                                                    </div>
+
+                                                    <div class="schedule__player">
+                                                        <p class="schedule__name">Bruce Simmons</p>
+                                                        <div class="schedule__bet">53.22</div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="schedule__timer">
+                                                <p class="schedule__time">Starts in: 5 hours 39 min • Bо 3</p>
+                                                <img src="data:image/png;base64,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" alt="BetMakerIcon"
+                                                    class="schedule__bet-icon">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <a href="#" class="schedule__watch">
+                                        <span class="schedule__watch-icon"></span> WATCH LIVE
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="schedule__card">
+                                    <div class="schedule__card-content">
+
+                                        <p class="schedule__card-event">Asia Minor: Play-Off</p>
+                                        <div class="schedule__date">
+                                            <p class="schedule__day">29 Oct</p>
+                                            <p class="schedule__date-time">19:00</p>
+                                        </div>
+
+                                        <div class="schedule__info">
+
+                                            <div class="schedule__teams">
+                                                <img src="data:image/png;base64,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" alt="people Team"
+                                                    class="schedule__teams-icon">
+                                                <img src="/assets/ForzeTeamIcon-CZA-u-j4.png" alt="ForzeTeam"
+                                                    class="schedule__teams-icon">
+                                            </div>
+
+                                            <div class="schedule__details">
+
+                                                <div class="schedule__players">
+                                                    <div class="schedule__player">
+                                                        <p class="schedule__name">Regina Watson</p>
+                                                        <div class="schedule__bet">3.22</div>
+                                                    </div>
+
+                                                    <div class="schedule__player">
+                                                        <p class="schedule__name">Kathryn Jones</p>
+                                                        <div class="schedule__bet">53.22</div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="schedule__timer">
+                                                <p class="schedule__time">Starts in: 5 hours 39 min • Bо 3</p>
+                                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAAPCAYAAAC1DNw2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAZkSURBVHgB7VZZbFzVGf7uuffO5hmP7fGWjKdj4rFx7CjOMmmaBKUOrSwRVFqlRTzQRKXbQ6WgPEUpbdqmIkFFtA8FHhCCh7ywSaBIASLEYiB2zI4iMHE0hjjeGM/YnuXaM3O3w3+uZ4JjQyye4ZfuzD3n/uec//uX7z/A90SkNeb5kV7UzM7BpcjgyxXW18J38nVMlofm4Rjchg/B0gq9IgNPzkH+0ts1XyqVmnRdt1Ye5nK55EgkMt3f32/TUKFHD4Vawj6fxFfqKori93q9V7JZvZGxkr3yO2OMk07VKImwfyWgVSBH/4z9G7bhWZTgW6VByw0Zn7oOY5MYFh7EkKcKO2F+w271wLln0Hl0avcvRy6N/EdRXfgmcakKutvbdg0M9A9t3XFLYvjy5TaZydfpWKaBcHjdC6Zp5lPJ2UOSIq/aRy8UEd+57W9Db772ANYC+u492LVjCwaQpr05JKURjDRtWrakXwdJ+u3SO38cV80xrKcBl/0UjaplerRqbh5PhI7jj+uibWczmfztjEmWbXE5UB2gyDKey2UUEQUS1NfVvBOoC9w18klizO31wLJMy+3xMcuyHZv9/mopefWS1NG9PZfJZqsWFxdg2zaTJMm2LIsFAtV2S6Rl/KOhN1vL2DhuJPwRZKzjMI2/w7Qfwsj/KS2F2b2UOeK5ExCuZJ/8HvvMk+D8OGz+X/ALh3CbOKCi19vrpKEj4Zs6J3w1TVzx1fL2TT0HKk7t7Op52BWo557qBt7Wue1sKNR0q+qv50K3pW1juqynlB9hvLfyvqGj+ymxTvWHeGd3/JFlEJSVmFZN3L8XEUrXIKMtWQPwr3uxUduOuiNxVCtsyUOSAtaVwXh9M06x4lL8JuZwZtdpvHzqZ+iYy8NwNlsE+m6Bet95XDZMq7mMDV6mTNbXhzu8XqYVuHRApogWNE2qDXoe1wvVv1kwMiJSsA3jg3A43EKLfDSWC4XCdIbkmrFM2SUxJvRIv/j2MhjmmkD7YtjL8+W4G5g6AdrnDziv6LgZNq75NPI0Ig0N2CrN04wHeH8Qp47FseGvBzGC+a/3IzJK33e+K6xl07LFbcgKs4YTV4YUqq98kfw2P25xyr14PP7Y+++8daa9q+d+KZN1SCU1O9cnK+o45QxMvYSODdHbCOe5yt7aQiEszJEVhVLM+hA3kFVA14fwc8lyoiRNz+CSmJtN44NCBm+1BvEnCM5kwL39mDh8wElpYhLg3RmMxpqwbvIzPFsNbA240S7CP6XhXGyz0ljM1b5C9Zm/7nBVxuRU8teyAyq1XcwtFo0o4YZuGBIRz2u2aQm3UeDk0MzM1EBl7ebNm6tGx1OO/W63B4ZhXMV3AaoZxKReAZOcncewOKT5H7j7YBsaT/+FgGZpxoL+u16KY6G8iOBe8CH7wIuYxYu4K/1vDFLytEtUyTo5KKheTDaY+JVQTXlgJxJUHGVpbGk3NC2nJFNz8Vgs5k7ntIDjO5cbpfzcHdPT04vLzGOVl+nZ2XbTMkFOgsfjLiYSiRJuIGzlBHUuQTRcVGNsHfajzFyH96KPLyzpUA2O9UAk7JJwDfhfE7or41ANdlQc8NwXGHzhdpwZPIZF8QwdxFMVvc4tW1rnM/OOs1VVBRnLS7rufCPj7RUghVT6LIKBmj1EtRBsHQwEPscasiqidSpepUruUUS6lNBKDFwgqAVoqLULxK42+cLExUw/crjbAWmRA+ytcXzMd0NUrMuYIcMl0Q8gnR5H4pgP7aA54cKxK3hy5559+ye+TJ6dnEhLqiKbojVEoz8anQbfo1EfFD01n8vZ0dimBb6sBfoDAe+dd/TJJ06cQJXPv4/qmFqQBYVJ7+E7AmUND+EofxS/oNTrVG2KuOFEziN+mZvGQeDM8zhKJMXv+RD7o1vwkrQIuezvWic6ITjmWRIuiDRVI4g5QKl4Px3AG59fmdDyWg5O4nAojc3NZiGb+nEoGPxpyTDJmxyMGCY5M3OdfcS8RQLp3Ia0xVKvRBcKq6TTvHUea4j0LeDNf+5GY9YmWjdw7ZpFLUfZpiN56KJTY5WrHD/yE7Qu17PckGro/+QgxujP9eCtiExkYVS7oT76WW3a7Q600DVNFyRWyus8lZpIVM6NRm++yTR1lQhpVbPnnBUmJxPOtTMW69pYLBYNiqrq97sSw8PDOn6Q75F8BZCEqKqHVSRgAAAAAElFTkSuQmCC" alt="BetMakerIcon"
+                                                    class="schedule__bet-icon">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <a href="#" class="schedule__watch">
+                                        <span class="schedule__watch-icon"></span> WATCH LIVE
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="schedule__card">
+                                    <div class="schedule__card-content">
+
+                                        <p class="schedule__card-event">Asia Minor: Play-Off</p>
+                                        <div class="schedule__date">
+                                            <p class="schedule__day">29 Oct</p>
+                                            <p class="schedule__date-time">19:00</p>
+                                        </div>
+
+                                        <div class="schedule__info">
+
+                                            <div class="schedule__teams">
+                                                <img src="data:image/png;base64,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" alt="people Team"
+                                                    class="schedule__teams-icon">
+                                                <img src="/assets/ForzeTeamIcon-CZA-u-j4.png" alt="ForzeTeam"
+                                                    class="schedule__teams-icon">
+                                            </div>
+
+                                            <div class="schedule__details">
+
+                                                <div class="schedule__players">
+                                                    <div class="schedule__player">
+                                                        <p class="schedule__name">Regina Watson</p>
+                                                        <div class="schedule__bet">3.22</div>
+                                                    </div>
+
+                                                    <div class="schedule__player">
+                                                        <p class="schedule__name">Kathryn Jones</p>
+                                                        <div class="schedule__bet">53.22</div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="schedule__timer">
+                                                <p class="schedule__time">Starts in: 5 hours 39 min • Bо 3</p>
+                                                <img src="data:image/png;base64,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" alt="BetMakerIcon"
+                                                    class="schedule__bet-icon">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <a href="#" class="schedule__watch">
+                                        <span class="schedule__watch-icon"></span> WATCH LIVE
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="schedule__nav">
+
+                            <button class="schedule__nav-btn schedule__nav-btn--prev" aria-label="Previous">
+                                <span class="swiper-button-prev"></span>
+                            </button>
+
+
+                            <div class="swiper-pagination"></div>
+
+                            <button class="schedule__nav-btn schedule__nav-btn--next" aria-label="Next">
+                                <span class="swiper-button-next"></span>
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="schedule__content-item" id="panel-battles" role="tabpanel" aria-labelledby="tab-battles">
+                    <div class="swiper schedule__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="schedule__card">
+                                    <div class="schedule__card-content">
+
+                                        <p class="schedule__card-title">Group Stage</p>
+
+                                        <div class="schedule__info">
+
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHhSURBVHgB7Zo/SwMxGId/dxW5QaFgC9ftXEq7HYjg6OggWDc7qZubf76A7k5u3ayfwPYT+AmEuJVC4SZ1qLSiaCva830LV4p4YtsoSckD4XKXDnnIm5C3iYUhPM9POg4OwhAbtg2PnkkoBvVJ0OPCslCp1UQQfbeiSjbrFxIJnKvY+RiCXg+H9bqo8EtfhCVoBC6hISSzyTJWLud79H5FxYOGUAS1u10s2lQpQFMJhuYKz+t9m0JqG5pDMgUeER+aQ/PEm4FEVnOvOFp7wqjcthPYKy9gXDi8pIrMOSEyyQ+MSojJsTElSB2ROK6D2UF93ukh675DNv8iMhz/6/4LjguPkM3UhJYRUQ0johpGRDWMiGoYEdWQstfijeDpVit2C1/aeRjUx9nm/wYpIpyHLHlvse0/tcnChNZXOOeIyzWG85Hv4FR3Uvh/LRmZZp+4XGP5JIO/xiy/qmFEVMOIqIYRUQ0johpGRDWMiGpIPVZ47ti4k5BbjIOVz/stjW47xMKhFUBz6DBU8PF0BZpDx9Nl23FwRkZt6EtA/a/aQgiW2IWm8A0hvu7UX2KazftaOu3eUHWFihYTn6OIJIrRNafBWskyqZRbpR/wULn0yYVicOep1Kha6nRQbDSEiNo+Ad3wil1tYAHwAAAAAElFTkSuQmCC" alt="group" class="schedule__icon">
+
+                                            <div class="schedule__details">
+
+                                                <div class="schedule__groups">
+                                                    <p class="schedule__group">Group A</p>
+                                                    <p class="schedule__group">Group B</p>
+                                                </div>
+
+                                                <div class="schedule__match">
+                                                    match #1
+                                                </div>
+
+                                            </div>
+
+                                            <p class="schedule__map">Map: Erangel</p>
+
+                                        </div>
+                                    </div>
+                                    <a href="#" class="schedule__watch">
+                                        <span class="schedule__watch-icon"></span> WATCH LIVE
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="schedule__card">
+                                    <div class="schedule__card-content">
+
+                                        <p class="schedule__card-title">Group Stage</p>
+
+                                        <div class="schedule__info">
+
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHhSURBVHgB7Zo/SwMxGId/dxW5QaFgC9ftXEq7HYjg6OggWDc7qZubf76A7k5u3ayfwPYT+AmEuJVC4SZ1qLSiaCva830LV4p4YtsoSckD4XKXDnnIm5C3iYUhPM9POg4OwhAbtg2PnkkoBvVJ0OPCslCp1UQQfbeiSjbrFxIJnKvY+RiCXg+H9bqo8EtfhCVoBC6hISSzyTJWLud79H5FxYOGUAS1u10s2lQpQFMJhuYKz+t9m0JqG5pDMgUeER+aQ/PEm4FEVnOvOFp7wqjcthPYKy9gXDi8pIrMOSEyyQ+MSojJsTElSB2ROK6D2UF93ukh675DNv8iMhz/6/4LjguPkM3UhJYRUQ0johpGRDWMiGoYEdWQstfijeDpVit2C1/aeRjUx9nm/wYpIpyHLHlvse0/tcnChNZXOOeIyzWG85Hv4FR3Uvh/LRmZZp+4XGP5JIO/xiy/qmFEVMOIqIYRUQ0johpGRDWMiGpIPVZ47ti4k5BbjIOVz/stjW47xMKhFUBz6DBU8PF0BZpDx9Nl23FwRkZt6EtA/a/aQgiW2IWm8A0hvu7UX2KazftaOu3eUHWFihYTn6OIJIrRNafBWskyqZRbpR/wULn0yYVicOep1Kha6nRQbDSEiNo+Ad3wil1tYAHwAAAAAElFTkSuQmCC" alt="group" class="schedule__icon">
+
+                                            <div class="schedule__details">
+
+                                                <div class="schedule__groups">
+                                                    <p class="schedule__group">Group A</p>
+                                                    <p class="schedule__group">Group B</p>
+                                                </div>
+
+                                                <div class="schedule__match">
+                                                    match #1
+                                                </div>
+
+                                            </div>
+
+                                            <p class="schedule__map">Map: Erangel</p>
+
+                                        </div>
+                                    </div>
+                                    <a href="#" class="schedule__watch">
+                                        <span class="schedule__watch-icon"></span> WATCH LIVE
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="schedule__card">
+                                    <div class="schedule__card-content">
+
+                                        <p class="schedule__card-title">Group Stage</p>
+
+                                        <div class="schedule__info">
+
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHhSURBVHgB7Zo/SwMxGId/dxW5QaFgC9ftXEq7HYjg6OggWDc7qZubf76A7k5u3ayfwPYT+AmEuJVC4SZ1qLSiaCva830LV4p4YtsoSckD4XKXDnnIm5C3iYUhPM9POg4OwhAbtg2PnkkoBvVJ0OPCslCp1UQQfbeiSjbrFxIJnKvY+RiCXg+H9bqo8EtfhCVoBC6hISSzyTJWLud79H5FxYOGUAS1u10s2lQpQFMJhuYKz+t9m0JqG5pDMgUeER+aQ/PEm4FEVnOvOFp7wqjcthPYKy9gXDi8pIrMOSEyyQ+MSojJsTElSB2ROK6D2UF93ukh675DNv8iMhz/6/4LjguPkM3UhJYRUQ0johpGRDWMiGoYEdWQstfijeDpVit2C1/aeRjUx9nm/wYpIpyHLHlvse0/tcnChNZXOOeIyzWG85Hv4FR3Uvh/LRmZZp+4XGP5JIO/xiy/qmFEVMOIqIYRUQ0johpGRDWMiGpIPVZ47ti4k5BbjIOVz/stjW47xMKhFUBz6DBU8PF0BZpDx9Nl23FwRkZt6EtA/a/aQgiW2IWm8A0hvu7UX2KazftaOu3eUHWFihYTn6OIJIrRNafBWskyqZRbpR/wULn0yYVicOep1Kha6nRQbDSEiNo+Ad3wil1tYAHwAAAAAElFTkSuQmCC" alt="group" class="schedule__icon">
+
+                                            <div class="schedule__details">
+
+                                                <div class="schedule__groups">
+                                                    <p class="schedule__group">Group A</p>
+                                                    <p class="schedule__group">Group B</p>
+                                                </div>
+
+                                                <div class="schedule__match">
+                                                    match #1
+                                                </div>
+
+                                            </div>
+
+                                            <p class="schedule__map">Map: Erangel</p>
+
+                                        </div>
+                                    </div>
+                                    <a href="#" class="schedule__watch">
+                                        <span class="schedule__watch-icon"></span> WATCH LIVE
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="schedule__card">
+                                    <div class="schedule__card-content">
+
+                                        <p class="schedule__card-title">Group Stage</p>
+
+                                        <div class="schedule__info">
+
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHhSURBVHgB7Zo/SwMxGId/dxW5QaFgC9ftXEq7HYjg6OggWDc7qZubf76A7k5u3ayfwPYT+AmEuJVC4SZ1qLSiaCva830LV4p4YtsoSckD4XKXDnnIm5C3iYUhPM9POg4OwhAbtg2PnkkoBvVJ0OPCslCp1UQQfbeiSjbrFxIJnKvY+RiCXg+H9bqo8EtfhCVoBC6hISSzyTJWLud79H5FxYOGUAS1u10s2lQpQFMJhuYKz+t9m0JqG5pDMgUeER+aQ/PEm4FEVnOvOFp7wqjcthPYKy9gXDi8pIrMOSEyyQ+MSojJsTElSB2ROK6D2UF93ukh675DNv8iMhz/6/4LjguPkM3UhJYRUQ0johpGRDWMiGoYEdWQstfijeDpVit2C1/aeRjUx9nm/wYpIpyHLHlvse0/tcnChNZXOOeIyzWG85Hv4FR3Uvh/LRmZZp+4XGP5JIO/xiy/qmFEVMOIqIYRUQ0johpGRDWMiGpIPVZ47ti4k5BbjIOVz/stjW47xMKhFUBz6DBU8PF0BZpDx9Nl23FwRkZt6EtA/a/aQgiW2IWm8A0hvu7UX2KazftaOu3eUHWFihYTn6OIJIrRNafBWskyqZRbpR/wULn0yYVicOep1Kha6nRQbDSEiNo+Ad3wil1tYAHwAAAAAElFTkSuQmCC" alt="group" class="schedule__icon">
+
+                                            <div class="schedule__details">
+
+                                                <div class="schedule__groups">
+                                                    <p class="schedule__group">Group A</p>
+                                                    <p class="schedule__group">Group B</p>
+                                                </div>
+
+                                                <div class="schedule__match">
+                                                    match #1
+                                                </div>
+
+                                            </div>
+
+                                            <p class="schedule__map">Map: Erangel</p>
+
+                                        </div>
+                                    </div>
+                                    <a href="#" class="schedule__watch">
+                                        <span class="schedule__watch-icon"></span> WATCH LIVE
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="schedule__card">
+                                    <div class="schedule__card-content">
+
+                                        <p class="schedule__card-title">Group Stage</p>
+
+                                        <div class="schedule__info">
+
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHhSURBVHgB7Zo/SwMxGId/dxW5QaFgC9ftXEq7HYjg6OggWDc7qZubf76A7k5u3ayfwPYT+AmEuJVC4SZ1qLSiaCva830LV4p4YtsoSckD4XKXDnnIm5C3iYUhPM9POg4OwhAbtg2PnkkoBvVJ0OPCslCp1UQQfbeiSjbrFxIJnKvY+RiCXg+H9bqo8EtfhCVoBC6hISSzyTJWLud79H5FxYOGUAS1u10s2lQpQFMJhuYKz+t9m0JqG5pDMgUeER+aQ/PEm4FEVnOvOFp7wqjcthPYKy9gXDi8pIrMOSEyyQ+MSojJsTElSB2ROK6D2UF93ukh675DNv8iMhz/6/4LjguPkM3UhJYRUQ0johpGRDWMiGoYEdWQstfijeDpVit2C1/aeRjUx9nm/wYpIpyHLHlvse0/tcnChNZXOOeIyzWG85Hv4FR3Uvh/LRmZZp+4XGP5JIO/xiy/qmFEVMOIqIYRUQ0johpGRDWMiGpIPVZ47ti4k5BbjIOVz/stjW47xMKhFUBz6DBU8PF0BZpDx9Nl23FwRkZt6EtA/a/aQgiW2IWm8A0hvu7UX2KazftaOu3eUHWFihYTn6OIJIrRNafBWskyqZRbpR/wULn0yYVicOep1Kha6nRQbDSEiNo+Ad3wil1tYAHwAAAAAElFTkSuQmCC" alt="group" class="schedule__icon">
+
+                                            <div class="schedule__details">
+
+                                                <div class="schedule__groups">
+                                                    <p class="schedule__group">Group A</p>
+                                                    <p class="schedule__group">Group B</p>
+                                                </div>
+
+                                                <div class="schedule__match">
+                                                    match #1
+                                                </div>
+
+                                            </div>
+
+                                            <p class="schedule__map">Map: Erangel</p>
+
+                                        </div>
+                                    </div>
+                                    <a href="#" class="schedule__watch">
+                                        <span class="schedule__watch-icon"></span> WATCH LIVE
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="schedule__nav">
+
+                            <button class="schedule__nav-btn schedule__nav-btn--prev" aria-label="Previous">
+                                <span class="swiper-button-prev"></span>
+                            </button>
+
+
+                            <div class="swiper-pagination"></div>
+
+                            <button class="schedule__nav-btn schedule__nav-btn--next" aria-label="Next">
+                                <span class="swiper-button-next"></span>
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+    </section>
+
+    <section class="stages">
+        <div class="container">
+            <div class="stages__wrapper">
+                <div class="stages__info">
+                    <h2 class="stages__title title-h2">Stages of implementation</h2>
+                    <p class="stages__text">
+                        The path to every Major begins with the open qualifiers for the regional Minor Championships,
+                        spanning
+                        Europe, CIS,
+                        Americas, and Asia. <span class="stages__highlight">Here is</span> the schedule of every
+                        qualifying
+                        stage of StarLadder Major.
+                    </p>
+                </div>
+
+                <ul class="stages__steps">
+                    <li class="stages__step">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFEAAABQCAYAAABh05mTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOpSURBVHgB7ZyBdZswEIbPfRkgnSBsUHeC0gmSDeoNkg3iTpAR6AZpJ4BOkGxAMkG8wd9TIe859h0gc4DA+t7T4z0h4PT7hKSTMFEkEolEIiEDIOWUc3pDeOScflDIsIFbzIMtGbIiI9iwDR8ymg/fV6tVQQZ8IjvCbibH3JMRlp74xodLmg879sTPZICliDi6OUOBMKR9ls35bLnQTvAP55qme8/NqYl6wXXs+l7ccfrDjvsinVwpN0/4kHNKqAehN2dPXjh95SrtDk9ozfmaegq4QBJSRiCaiIttwj0RdYkdiwEXHmWLOmlsaX5sG86ldWrFS0R+qf7UTlrPR8egpT7ukFIHtOb8KuQldF4kQt5OKqiJKBU+t84mEfJepIKaiM9CXkrnxVrIeyUfIAdVrxrKH0EB4WMfn1r7lG8a4kjeeEPngeSFhVa4ScRCyDsXEaWZyW/yBdVaiUSqlF9Ec+bsRKn3mk4B1cLOIblSdikiZkLRJzoVvvgWMqlQdvYiQulQ0GeFkC++hNxLl6jijV5GTkmbfXVdS6mu1Be+yR1kMh8jp6aDiI9KPW0W4CC/Gz8I2Wbk1Gj2ofLAX0r9+nvhngGux9J2NJRQenIKCMV2Z/eTcs7VNyFL+IYbeEIBAX+GGRPzje99rKCAgB9mC/uaMXcLFtE14XF2cqB6R5ZtFlFAoJ0cp85Kehq2gd5zO64oAKAPot/Fu6apqT1T6uWC2OTEdtwItjl7TQLNJqt99c6AQji1oTCQPK2QFuInBXrUJ6EJgR6V+UYhAnlA/kgTAjkqYzcTsQb6OHKSYC70CcIthQr0qI/9FKrdFm2qWsKoQxmMhl+/HEtINI9j57EtGg1RkaGFRDUmLJXnZzQXoAc4Ha6J3dEAoJqSNkWb5rUBAe1Tw8zKK+sf7bHhWSUmHmqdTAchyz5eWYu3RfPXW/MV8B10C1b8F7NrZTuK53iavYDv1JV+QDdyVKuMbgZ0uXf9us7PO97nAXN7B3YB1fCnxLA471z2Tg1UzTvDMCzT+zSMxcywlHffKdRi3sO/mZf1dZN7XjAf6zhQheddiColeQea25lVcHrmWOBfCoSgRNzHudphXkhfaO0Tv2MxIIpoQBTRgCiiAVFEA6KIBkQRDYgiGhBFNCCKaEAU0YAoogFRRAOiiAaMJiKaF9aPUO7RFfecLS0JyDtVxyClERjLE7/QNIyykXMsEacK5T/TkkC1qDTWn/W654S7kTMSiUQikSb+AWC6DWzDUAmIAAAAAElFTkSuQmCC" alt="Trophy" class="stages__icon">
+                        <div class="stages__content">
+                            <h3 class="stages__label">Registration</h3>
+                            <p class="stages__time">29 sep, 19:00 – 20 nov, 10:00</p>
+                        </div>
+                    </li>
+
+                    <li class="stages__step">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFEAAABQCAYAAABh05mTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAULSURBVHgB7Zzhcds4EIVXN/f/3MGxg1MH0VUQd+B04HRAXgW5DpQOXAKdCpxUwKQCpYMXYAhNFGYXWBAgAcp6MxzbGnJ38Wm5AAGYO0oUgIP50dN2ddjtdp8oQX/QTcm6QcygG0SiO0rUn5Suf5jPPpvjO9UnC2w/+ayh0jIdyxN+154qlImrYWIt2ykKQQ1UsUx8JybmpFs6tSa2zGfPVLc+Mp+1VEJ2fAheDVUsT9wHWlPuNh6YQI60Adk6yMQ+rJYA7pvk6soJlWfhWS4JTgLIAy0l5/gIWY+0IZl433vacoxJiB1j/HDxZ2OOv8xxb46Dx05nnj//o43JtNV2KJ3nlGd3fKGLca9p6zMFDMeqTM+WSTZ+REpjVCtbUzZ1C0sy7XgHvkYuCvGIjXQiWiFc87NAHDCmfkNXrAuYQ06IL+b4m16hHNCXEETNY9930xt9o1co0+6vpJiNus0nZtANYgbdIGbQ1UA09b6zBxVQjuWB4nLwWve77RA6KilmiFP1mrLLwKk6yiQw02aaizYDUQCYFeRVQwwAzAbyaiEqAWYBORfiqWaIHoAnyDMxHc3UXIhDrRADAPfuyAqSgRheEmYgvlAFCgG8OC8ryFwQiy/GawFenJ8NpIYH98QynbVI3vDDBPbOHA/KczviF9dtnP+agfVnilO4pv2qafu/Bq8As7eGMsoBPOshcG5UBrprfFkYvR7E2Aj3EeCnyLNMyk4AekFWAnDP2PmgufCRufAtJUoAyIKsAaCzeZhlS2hs0qoe/AB/AVkLQGd3XkKB3y4XTmHZngbgWU+oBKCz/YGxqdt7yQQ1a6wYCRA1AXT2+6nRmItfmIZEDXUCAB+gA1wMoPMxlT6ZwKfxIeJ6VScSOK80QK5T0Zc1oXGq4BDRC3vOLwrQ+WkZ+/pRijn5jjGgmoiAvEFI3L84AVkcoPPVMz6aGBuSEVVd9IAcAiBrAdgwPuI7VwGEerw4E+Sd8PlqAJ0/rsTED/PAF9aoucU5IBkbqwJ0PnvG17z/zQG/MyrKWArIQgC5W3n+dKAAYM6DfBsLsgRA5/eY1R/4Xjp64O1stVCCLAjwDvzd11CKwNeHubMiLQIgSwF0vrkO5YlSBb6DmZWNzl7rAXmPQgBdbAPj9w3lEDJmo7PXIk5rAOSyMN/6EjJno7PZQqc1AEq1ULUOFOOoz91ABcjFAbo4OsZ3/lVOyNnYUII8INcC2Aj+82bhhcOecZa8Q4IBuQpA53uRNvkc7oVv7T0l6gLkmgClf5JsaEmBn7BNvq2d7TzDCZ2vBvxwavkvEXJPZpcUsu+WWEpCG9bbMgP5FQCzVwXXlInzfyH+dd+iItzWVsn1cUlBXtderRZPA+qFgO6pQmF8rORUbvsg5BdqiNP8pQR5YsPG31BJeYKrBiT8M0N1fNmQl0mLgwwAXOapZK7gXyo9UAFBfv2MVZmOJCT4JxRW7bXhf2VLnQDPCoDsaAVBHgfWD/CsAEj7ZNPQAsI4Wug3D/As+G+nAZmLOvxLC0BtnYhWGHvGwdOwI9LnI+2z/JPHhwW72sTGIoI8IE/OSozZ7su+xUpHEUF+1o6GiXHoMgTsWX+bmVVSC+OgPNR4EaaD1weu3/7tGxL0r5MaMG5LtnX1EWH4cHavL/skmca+VYLRyNa+684+n6C7xSVdzZvzsigSpoXX4jXdujEKwOwx1scbPI0MqDf4+Qo+O1yptub9AL3VAhM8CcwcAAAAAElFTkSuQmCC" alt="checkin" class="stages__icon">
+                        <div class="stages__content">
+                            <h3 class="stages__label">Check-in</h3>
+                            <p class="stages__time">29 sep, 19:00 – 20 nov, 10:00</p>
+                            <button class="stages__btn">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAK0SURBVHgBpVZNUhpREO5+MxpCAgVVkaEqi3CD4AkkJ1A3RrNRTwCewHCC4Ak0G2HYiCcQTwCeIGxSpTFVIIxSMTOv0z3WWASH/68KZup1T/e87q+/NwhjQMeJhBONFABpjQgygJCQdXwyN/lXMz08f71z3RoVA8MW++V0xjXomACySFQC1HX33r1K7nc6gU+v+m4NwMhy4oJCqhueKo5L9Aynmt7r2taPXsXKw5Tollf2enaqcXdqFcY69uz0V3Fs8w5gRsgz/otxjFAHp2IVxKHNdYc50T7LJHpVq+HY6d1gze+BX3Olz1ytNpPT1HFcEo61pOjC0PhJeqJk0TP0IQKVFg0ukBgewZGQBIK3l9LAAuCynN1XrPWhtbaU2+RM66ihBHOCA5VI69ab7dvz/wxMbzO6nJcSbYDymjAHhDE8Bx/i27cHL4xaXQJizuTbbGzr9yXMCGGdBtr1Hv6shtndSKRpPPYzirfywih96Y+Zhe5pakMj5D1myuB0DyK52eogS4sKM3qGkfjLVAubTKf6PosGHPrBp2CdIsDO8HC93frZlADKhF3Htr7BwM4I3GMXl/anojRXR/E2WmYkkh22SYDY1s2qBmlmqtErp3Me74pcKib5BSbFFn8gbEoP6qD02ijH+OebA034HSQ40En8y68aTAODPvJ/7Uk/7FR7kv+sGuWIrgVE4WG5mCi1M6BbZsmvpHyp8FnkerhvGJDvzyHTw5AYaFDeI1V8TiAN1RqLoqiLyLUcsUIE0HASsOx5DuI71yd8qS1FXzXm2Yk8cx9d9okQ2745Gul4xxLgMC0HD41JCA4rx1558UzooS/dN1Af8pDkCFlpPbyK7VzXA7v/tSGzoyDHXxx5LknTJQwdvtAEg4lMlnMOsEGKvzCCBBo6fN/i4HX34fFolB4J/gFcwGapmMy7xAAAAABJRU5ErkJggg==" alt="success" class="stages__btn-icon">
+                                <span class="stages__btn-text">You are registered</span>
+                            </button>
+                        </div>
+
+                    </li>
+
+                    <li class="stages__step">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFEAAABQCAYAAABh05mTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUpSURBVHgB7Zz/dds2EMdPef2/3iDIBFYnKDtBsoGVCaJMYHWCpBNYnaDpBFInsDMB2QnsTHC9MyGLOgIUQeKXK3zew6NIggD41REAwQMAZoKIVxQ2FGoc5p7CDUSA8lmPKA+fv6OgICVawHOFlawhIJT+Ct2o+T4gFRMK/FxoCAi2Fu/KJ5jBTzCPt2L/SQeJgnh0rcpWnisRb5YlzhVR8m2xWHyUB7X1KYjPA5XnN3mQylPRZgeeeAOF2RQRPVBE9MBgnYhtH2oJ9op3Ce5wt2gF4ZjSSCwHytRQeKK69QFc0F2XKV2FO0t6NaZhZylPhe7UaHlZeGPIYEsbFmOKlf2fURS2pM8XeeJERIrwlTZRXs1eMWsp5EudiG3fSfbcuaO6BXOHlal0cIHT+grh4NdK13pxr4MJTusDnPZzWci/qZ48vYYO/iXqAN4fLAydvxXXjKkTQ7/21RPqxNszaV4Z9HlJu9s6V+Laz6T0E7ixtBQo1Qu+spRHgQOsA6XDb2IfOof7bYZN5SEo3id05x4CgtN6AqPaARQ9lsPxuZ3tP6HtR7mwhbD8AW40FP4ZGXf4ycQJlqivUw7//heIAOczsjw7dBiU1fF7ljh7FIfqi4Y27yhNriN+HojaUNx/IQKUz2cqD1vkNdit54fzW4gFb0NhvgrkC/3nNhCBMgDhgSKiB4qIHigieqCI6IEiogeKiB5YHH50e+CFcVBf9Fm/YokeKCJ6wPbaZ3O/uHTU4Fk5ugGFHrZRnPI4e6CI6IEiogeyFhFTuwKPJEsRD58c6GeNqd2BR5CrJa7g2J3g7Sx34NBkJ6J+hOUnzHXO1pijJa6g36llAbO1xhxFtH1Iz9YasxIRW0dLZTmdrTXmZonSb2Yr9rO0xmxENFhho6dz7DvHsq4bkw9AYN8V5UYfl25wj6ms0TYA0Y0QXURs/f64Y70R+dcwUHhsfW2iu0NjKF+ckZkraP35eBqb0mEJ9kZkI/Z/h1P/SfaGXev7aHR40NvvMMXb3we+LVFb2E4/fi7UlvR26M69T4vF2I8zTrtp5saS3pRpE17uxXZPh+MhH+cxnxcaOD6Gz7/pMTQ6XLKTOZX7Hf18D8fq4ArOTxWJ1wj5/vcoDfbfrk2WQeEteETn9c2QF1clr/dx1mnavGg34BHst+7eBdT57KKLqNMNKqRFwBoDdIEwZT8xlJADAioIQFIRdfpehYwtoM5zl1REnYdNyFvHdFaxBdT57kwiRh2A0M7ovCZDI05V4MZ7sd9wujr96EQfxdE3KhfbcHVZacT+JpWATKqhsGuxvwc3vov9pHOzU4lYiX3XwQIZX0FCUokoX8V+dHfwuP4YDyDcGRqMRuznsUpAjNbZktdj5/hBPNPIz6YrJvZb+eDvyJjLoCy277m9vLBdae7csFmNesE27E/iriAwmJFrnRL7zyvf0ZZnoJ6zJsXx0Lxs1jUkIoWI8mZtI9x7aGe6N4ZzCvr1oIJEpBCxOnO+obDihdIo8GIVPIb4Ec7PGK0gNaZ6KlA+tkWLuD68OXPtCu0T1B8hMJhRw/JoEO8WHVpXi5gXJeJKC+csniWtWqcV/KN+NiK+ZrDMHghHEdEDNhEVFEwM19+Y4F30NYHtqHyXF0+NriXuxXVOQ/YXgNRj34uBZjeNDVw4eBxZkvx6iLMQF3DXphLpXPqMU7mwObPtricuRVTQLuKtoGCjAfFR7KR1HvgaV2jhzxK9r4q9Lg5H6Iyc7KFMHuf730M7svSL6avif1pLrvmLTaNAAAAAAElFTkSuQmCC" alt="Scheduling" class="stages__icon">
+                        <div class="stages__content">
+                            <h3 class="stages__label">Scheduling</h3>
+                            <p class="stages__time">29 sep, 19:00 – 20 nov, 10:00</p>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="participants">
+        <div class="container">
+            <div class="participants__wrapper">
+                <h2 class="participants__title title-h2">Registered: 24</h2>
+                <div class="participants__timer">Remaining: 15min 30sec</div>
+
+                <div class="participants__table-wrapper">
+                    <table class="participants__table">
+                        <thead>
+                            <tr class="participants__table-row--head">
+                                <th class="participants__table-header" scope="col">#</th>
+                                <th class="participants__table-header" scope="col">Team</th>
+                            </tr>
+                        </thead>
+                        <tbody class="participants__table-body">
+                            <tr class="participants__table-row">
+                                <td class="participants__table-data">353</td>
+
+                                <td class="participants__table-data">
+                                    <span class="participants__player">
+                                        <img src="data:image/svg+xml,%3csvg%20width='24'%20height='19'%20viewBox='0%200%2024%2019'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0%200.5H24V18.5H0V0.5Z'%20fill='%23FFD500'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0%200.5H24V9.5H0V0.5Z'%20fill='%23005BBB'/%3e%3c/svg%3e" alt="Ukr flag" class="participants__flag">
+                                        Dianne Russel
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="participants__table-row">
+                                <td class="participants__table-data">2</td>
+
+                                <td class="participants__table-data">
+                                    <span class="participants__player">
+                                        <img src="data:image/svg+xml,%3csvg%20width='24'%20height='19'%20viewBox='0%200%2024%2019'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0%200.5H24V18.5H0V0.5Z'%20fill='%23FFD500'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0%200.5H24V9.5H0V0.5Z'%20fill='%23005BBB'/%3e%3c/svg%3e" alt="Ukr flag" class="participants__flag">
+                                        Dianne Russel
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="participants__table-row">
+                                <td class="participants__table-data">3</td>
+
+                                <td class="participants__table-data">
+                                    <span class="participants__player">
+                                        <img src="data:image/svg+xml,%3csvg%20width='24'%20height='19'%20viewBox='0%200%2024%2019'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0%200.5H24V18.5H0V0.5Z'%20fill='%23FFD500'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0%200.5H24V9.5H0V0.5Z'%20fill='%23005BBB'/%3e%3c/svg%3e" alt="Ukr flag" class="participants__flag">
+                                        Dianne Russel
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="participants__table-row">
+                                <td class="participants__table-data">45</td>
+
+                                <td class="participants__table-data">
+                                    <span class="participants__player">
+                                        <img src="data:image/svg+xml,%3csvg%20width='24'%20height='19'%20viewBox='0%200%2024%2019'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0%200.5H24V18.5H0V0.5Z'%20fill='%23FFD500'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0%200.5H24V9.5H0V0.5Z'%20fill='%23005BBB'/%3e%3c/svg%3e" alt="Ukr flag" class="participants__flag">
+                                        Dianne Russel
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="participants__table-row">
+                                <td class="participants__table-data">65</td>
+
+                                <td class="participants__table-data">
+                                    <span class="participants__player">
+                                        <img src="data:image/svg+xml,%3csvg%20width='24'%20height='19'%20viewBox='0%200%2024%2019'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0%200.5H24V18.5H0V0.5Z'%20fill='%23FFD500'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0%200.5H24V9.5H0V0.5Z'%20fill='%23005BBB'/%3e%3c/svg%3e" alt="Ukr flag" class="participants__flag">
+                                        Dianne Russel
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="participants__table-row">
+                                <td class="participants__table-data">43</td>
+
+                                <td class="participants__table-data">
+                                    <span class="participants__player">
+                                        <img src="data:image/svg+xml,%3csvg%20width='24'%20height='19'%20viewBox='0%200%2024%2019'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0%200.5H24V18.5H0V0.5Z'%20fill='%23FFD500'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0%200.5H24V9.5H0V0.5Z'%20fill='%23005BBB'/%3e%3c/svg%3e" alt="Ukr flag" class="participants__flag">
+                                        Dianne Russel
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr class="participants__table-row">
+                                <td class="participants__table-data">67</td>
+
+                                <td class="participants__table-data">
+                                    <span class="participants__player">
+                                        <img src="data:image/svg+xml,%3csvg%20width='24'%20height='19'%20viewBox='0%200%2024%2019'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0%200.5H24V18.5H0V0.5Z'%20fill='%23FFD500'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0%200.5H24V9.5H0V0.5Z'%20fill='%23005BBB'/%3e%3c/svg%3e" alt="Ukr flag" class="participants__flag">
+                                        Dianne Russel
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr class="participants__table-row">
+                                <td class="participants__table-data">1</td>
+
+                                <td class="participants__table-data">
+                                    <span class="participants__player">
+                                        <img src="data:image/svg+xml,%3csvg%20width='24'%20height='19'%20viewBox='0%200%2024%2019'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0%200.5H24V18.5H0V0.5Z'%20fill='%23FFD500'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0%200.5H24V9.5H0V0.5Z'%20fill='%23005BBB'/%3e%3c/svg%3e" alt="Ukr flag" class="participants__flag">
+                                        Dianne Russel
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr class="participants__table-row">
+                                <td class="participants__table-data">78</td>
+
+                                <td class="participants__table-data">
+                                    <span class="participants__player">
+                                        <img src="data:image/svg+xml,%3csvg%20width='24'%20height='19'%20viewBox='0%200%2024%2019'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0%200.5H24V18.5H0V0.5Z'%20fill='%23FFD500'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M0%200.5H24V9.5H0V0.5Z'%20fill='%23005BBB'/%3e%3c/svg%3e" alt="Ukr flag" class="participants__flag">
+                                        Dianne Russel
+                                    </span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+
+
+                <nav class="participants__nav">
+                    <ul class="participants__list">
+                        <li class="participants__item">
+                            <a class="participants__link" href="#">support</a>
+                        </li>
+                        <li class="participants__item">
+                            <a class="participants__link" href="#">rules</a>
+                        </li>
+                        <li class="participants__item">
+                            <a class="participants__link" href="#">faq</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </section>
+
+
+
+</body>
+
+</html>
